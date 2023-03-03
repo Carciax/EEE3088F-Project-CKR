@@ -30,6 +30,7 @@ S 5500 1500 1100 3200
 U 6401C298
 F0 "Mircocontroller" 50
 F1 "Mircocontroller.sch" 50
+F2 "3V3in" I L 5500 1750 50 
 $EndSheet
 $Sheet
 S 8550 1850 1600 1700
