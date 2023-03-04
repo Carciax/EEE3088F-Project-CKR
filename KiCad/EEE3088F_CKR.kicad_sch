@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 31e5d740-f3fb-4029-be8d-dfdc4f653d72)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 210.82 77.47) (size 44.45 55.88) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0bd49e56-bd9e-4b8b-9d1f-614d2be330f2)
+    (property "Sheetname" "Output" (at 210.82 76.7584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "output.kicad_sch" (at 210.82 133.9346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "EEE3088F_CKR"
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 135.89 53.34) (size 33.02 95.25) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 781e4e3c-a3ff-4e52-b852-0676e4a3ef49)
+    (property "Sheetname" "Microcontroller" (at 135.89 52.6284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "microcontroller.kicad_sch" (at 135.89 149.1746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "EEE3088F_CKR"
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 31.75 27.94) (size 48.26 45.72) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d53a003e-af2e-46c6-8ee9-c5701cef8adb)
+    (property "Sheetname" "Power" (at 31.75 27.2284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 31.75 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "EEE3088F_CKR"
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 34.29 114.3) (size 49.53 59.69) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid fd4dbd89-ce5b-45e9-b49b-ec599df435f0)
+    (property "Sheetname" "Sensors" (at 34.29 113.5884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "sensors.kicad_sch" (at 34.29 174.5746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "EEE3088F_CKR"
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
