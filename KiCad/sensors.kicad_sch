@@ -448,6 +448,11 @@
           (reference "R2") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "R2") (unit 1)
+        )
+      )
     )
   )
 
@@ -487,6 +492,11 @@
           (reference "R2") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "R2") (unit 1)
+        )
+      )
     )
   )
 
@@ -509,6 +519,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "#PWR0101") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
           (reference "#PWR0101") (unit 1)
         )
       )
@@ -537,6 +552,11 @@
           (reference "#PWR024") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "#PWR024") (unit 1)
+        )
+      )
     )
   )
 
@@ -562,6 +582,11 @@
           (reference "#PWR019") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "#PWR019") (unit 1)
+        )
+      )
     )
   )
 
@@ -584,6 +609,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "#PWR020") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
           (reference "#PWR020") (unit 1)
         )
       )
@@ -626,6 +656,11 @@
           (reference "R2") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "R2") (unit 1)
+        )
+      )
     )
   )
 
@@ -648,6 +683,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "#PWR021") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
           (reference "#PWR021") (unit 1)
         )
       )
@@ -676,6 +716,11 @@
           (reference "#PWR023") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "#PWR023") (unit 1)
+        )
+      )
     )
   )
 
@@ -701,6 +746,11 @@
           (reference "#PWR0102") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "#PWR0102") (unit 1)
+        )
+      )
     )
   )
 
@@ -723,6 +773,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
           (reference "#PWR018") (unit 1)
         )
       )
@@ -765,6 +820,11 @@
           (reference "C1") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "C1") (unit 1)
+        )
+      )
     )
   )
 
@@ -789,6 +849,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "RV1") (unit 1)
+        )
+      )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
           (reference "RV1") (unit 1)
         )
       )
@@ -822,6 +887,11 @@
           (reference "U6") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "U6") (unit 1)
+        )
+      )
     )
   )
 
@@ -847,6 +917,15 @@
           (reference "#PWR022") (unit 1)
         )
       )
+      (project "sensors"
+        (path "/e4507f06-75b4-4ae5-84bb-a133ee8f5147"
+          (reference "#PWR022") (unit 1)
+        )
+      )
     )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
   )
 )
