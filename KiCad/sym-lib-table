@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Power comonentes")(type "KiCad")(uri "${KIPRJMOD}/power comonentes libary/Power comonentes.kicad_sym")(options "")(descr ""))
+)
