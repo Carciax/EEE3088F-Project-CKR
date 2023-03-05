@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Kian\OneDrive - University of Cape Town\Desktop\uct\3 year\frirst semester\EEE3088\EEE3088F-Project-CKR\KiCad\power.kicad_sch</source>
+    <date>2023/03/05 16:53:49</date>
+    <tool>Eeschema (7.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Multiple-cell battery"/>
+      <property name="ki_keywords" value="batt voltage-source cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff53b2b-4dc3-4dce-ab7e-b6f15f0b3fd4</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>10uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ebd1b11e-7728-4801-9574-ab24cc7325eb</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>84a8934e-34be-460f-a04d-888b2a62ebe5</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c35b5b32-45e1-4d88-8c5c-3bb148d3d5ec</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5056039-992c-4e65-b1d9-3bbdab3d43e6</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED Green</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b6babe6-7d6d-42ae-8dc3-688976025760</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED RED</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f30e00c-16eb-43a1-9c7d-45948be46428</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4bd43b0c-be21-44ae-b81e-c4b89545ee50</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4cea9ab-ef2f-4296-afee-d7613a2ad8f7</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1.2k</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0b21973-37e1-4beb-b485-a7c43fc7e773</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>R</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2cd81e06-a63c-4d32-9980-4949d1dfacb7</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>~</value>
+      <libsource lib="New_Library" part="C404969" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e795de6-c0a3-45b5-a663-b37636ccd7ba</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>~</value>
+      <libsource lib="Power comonentes" part="TP4056" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f68838ee-0f94-4dba-b5c4-822deed4b98e</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>~</value>
+      <libsource lib="power_components_library" part="LM2937L-33-TQ2-R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a76a3ec6-d2e3-473e-b0f7-d777ce895476</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>~</value>
+      <libsource lib="power_components_library" part="SI2301CDS-T1-GE3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95128fa5-0175-4201-a3a3-df8ec1739caa</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="New_Library" part="C404969">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="input"/>
+        <pin num="2" name="D-" type="input"/>
+        <pin num="3" name="D+" type="input"/>
+        <pin num="4" name="ID" type="input"/>
+        <pin num="5" name="GND" type="input"/>
+        <pin num="6" name="SH1" type="input"/>
+        <pin num="7" name="SH2" type="input"/>
+        <pin num="8" name="SH3" type="input"/>
+        <pin num="9" name="SH4" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power comonentes" part="TP4056">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="" name="STDBY#" type="input"/>
+        <pin num="1" name="TEMP" type="input"/>
+        <pin num="2" name="PROG" type="input"/>
+        <pin num="3" name="GND" type="input"/>
+        <pin num="4" name="Vcc" type="input"/>
+        <pin num="5" name="BAT" type="input"/>
+        <pin num="7" name="CHRG" type="input"/>
+        <pin num="8" name="CE" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="power_components_library" part="LM2937L-33-TQ2-R">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="VOUT" type="input"/>
+        <pin num="4" name="PAD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="power_components_library" part="SI2301CDS-T1-GE3">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="D" name="3" type="input"/>
+        <pin num="gate" name="1" type="input"/>
+        <pin num="s" name="2" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Power comonentes">
+      <uri>C:\Users\Kian\OneDrive - University of Cape Town\Desktop\uct\3 year\frirst semester\EEE3088\EEE3088F-Project-CKR\KiCad/power comonentes libary/Power comonentes.kicad_sym</uri>
+    </library>
+    <library logical="power_components_library">
+      <uri>C:\Users\Kian\OneDrive - University of Cape Town\Desktop\uct\3 year\frirst semester\EEE3088\EEE3088F-Project-CKR\KiCad/power_components_library/power_components_library.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3.3 0ut">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="VOUT" pintype="input"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="GND" pintype="input"/>
+      <node ref="U3" pin="1" pinfunction="TEMP" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="GND" pintype="input"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="PAD" pintype="input"/>
+    </net>
+    <net code="3" name="Net-(BT1-+)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="BAT" pintype="input"/>
+      <node ref="U5" pin="D" pinfunction="3" pintype="input"/>
+    </net>
+    <net code="4" name="Net-(D1-A)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="VBUS" pintype="input"/>
+      <node ref="U3" pin="4" pinfunction="Vcc" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="CE" pintype="input"/>
+    </net>
+    <net code="5" name="Net-(D1-K)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(U3-CHRG)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="CHRG" pintype="input"/>
+    </net>
+    <net code="8" name="Net-(U3-PROG)">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="PROG" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(U3-STDBY#)">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U3" pin="" pinfunction="STDBY#" pintype="input"/>
+    </net>
+    <net code="10" name="Net-(U4-VIN)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="VIN" pintype="input"/>
+      <node ref="U5" pin="s" pinfunction="2" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(U5-1)">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U5" pin="gate" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="12" name="unconnected-(R5-Pad2)">
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="unconnected-(U2-D+-Pad3)">
+      <node ref="U2" pin="3" pinfunction="D+" pintype="input"/>
+    </net>
+    <net code="14" name="unconnected-(U2-D--Pad2)">
+      <node ref="U2" pin="2" pinfunction="D-" pintype="input"/>
+    </net>
+    <net code="15" name="unconnected-(U2-ID-Pad4)">
+      <node ref="U2" pin="4" pinfunction="ID" pintype="input"/>
+    </net>
+    <net code="16" name="unconnected-(U2-SH1-Pad6)">
+      <node ref="U2" pin="6" pinfunction="SH1" pintype="input"/>
+    </net>
+    <net code="17" name="unconnected-(U2-SH2-Pad7)">
+      <node ref="U2" pin="7" pinfunction="SH2" pintype="input"/>
+    </net>
+    <net code="18" name="unconnected-(U2-SH3-Pad8)">
+      <node ref="U2" pin="8" pinfunction="SH3" pintype="input"/>
+    </net>
+    <net code="19" name="unconnected-(U2-SH4-Pad9)">
+      <node ref="U2" pin="9" pinfunction="SH4" pintype="input"/>
+    </net>
+  </nets>
+</export>

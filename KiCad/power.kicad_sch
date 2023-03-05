@@ -852,6 +852,10 @@
     (uuid c8405be5-9aa2-446a-b03a-bc2711ba466b)
   )
 
+  (text "polarity portector" (at 152.4 60.96 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 06b9be88-d013-4c9a-8470-0e2e2f8688f6)
+  )
   (text "Battery charger " (at 52.07 60.96 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4d7338a6-f120-4e32-8b93-1356972572ba)
@@ -1017,7 +1021,7 @@
     (property "Reference" "R5" (at 175.26 42.545 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "R" (at 175.26 45.085 0)
+    (property "Value" "1.2k" (at 175.26 45.085 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 170.942 43.18 90)
@@ -1031,6 +1035,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "R5") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "R5") (unit 1)
         )
       )
@@ -1114,7 +1123,7 @@
     (property "Reference" "R2" (at 66.04 41.275 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 66.04 43.815 0)
+    (property "Value" "1.2k" (at 66.04 43.815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 61.722 41.91 90)
@@ -1163,6 +1172,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "#PWR015") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "#PWR015") (unit 1)
         )
       )
@@ -1272,6 +1286,11 @@
           (reference "U5") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "U5") (unit 1)
+        )
+      )
     )
   )
 
@@ -1294,6 +1313,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "#PWR016") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "#PWR016") (unit 1)
         )
       )
@@ -1322,6 +1346,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "U4") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "U4") (unit 1)
         )
       )
@@ -1455,6 +1484,11 @@
           (reference "#PWR017") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "#PWR017") (unit 1)
+        )
+      )
     )
   )
 
@@ -1464,7 +1498,7 @@
     (property "Reference" "C3" (at 242.57 52.705 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10f" (at 242.57 55.245 0)
+    (property "Value" "10uf" (at 242.57 55.245 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 239.7252 57.15 0)
@@ -1478,6 +1512,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "C3") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "C3") (unit 1)
         )
       )
@@ -1562,7 +1601,7 @@
     (property "Reference" "R3" (at 80.01 41.275 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1k" (at 80.01 43.815 0)
+    (property "Value" "1.2k" (at 80.01 43.815 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "" (at 79.248 41.91 90)
@@ -1634,7 +1673,7 @@
     (property "Reference" "C4" (at 193.04 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10f" (at 193.04 40.64 0)
+    (property "Value" "10uf" (at 193.04 40.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 190.1952 42.545 0)
@@ -1648,6 +1687,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "C4") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "C4") (unit 1)
         )
       )
@@ -1715,6 +1759,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "#PWR014") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "#PWR014") (unit 1)
         )
       )
