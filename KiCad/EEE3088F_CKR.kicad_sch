@@ -8,23 +8,6 @@
   )
 
 
-  (sheet (at 210.82 77.47) (size 44.45 55.88) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 0bd49e56-bd9e-4b8b-9d1f-614d2be330f2)
-    (property "Sheetname" "Output" (at 210.82 76.7584 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "output.kicad_sch" (at 210.82 133.9346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "EEE3088F_CKR"
-        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72" (page "5"))
-      )
-    )
-  )
-
   (sheet (at 135.89 53.34) (size 33.02 95.25) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
