@@ -1560,7 +1560,7 @@
   )
 
   (symbol (lib_id "Device:Battery") (at 137.16 36.83 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid dff53b2b-4dc3-4dce-ab7e-b6f15f0b3fd4)
     (property "Reference" "BT1" (at 140.97 35.814 0)
       (effects (font (size 1.27 1.27)) (justify left))
