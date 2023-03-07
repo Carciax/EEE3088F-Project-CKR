@@ -2791,7 +2791,7 @@
   )
 
   (symbol (lib_id "MCU_ST_STM32F0:STM32F051C6Tx") (at 48.26 104.14 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
+    (in_bom no) (on_board no) (dnp yes) (fields_autoplaced)
     (uuid d342e36e-7d3a-49c8-8ba9-4ab2785c3326)
     (property "Reference" "U1" (at 52.7559 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2803,6 +2803,9 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
     (property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" (at 48.26 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Enable" "0" (at 48.26 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f6296876-29a3-425b-be9e-478aa478ba3f))
