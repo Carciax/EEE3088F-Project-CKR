@@ -338,6 +338,10 @@
     [
       "781e4e3c-a3ff-4e52-b852-0676e4a3ef49",
       "Microcontroller"
+    ],
+    [
+      "4be356fb-1e37-446a-bf93-f98ec62d54dd",
+      "USB"
     ]
   ],
   "text_variables": {}

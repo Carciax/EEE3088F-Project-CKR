@@ -1089,6 +1089,11 @@
           (reference "U8") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "U8") (unit 1)
+        )
+      )
     )
   )
 
@@ -1251,6 +1256,11 @@
           (reference "R11") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "R11") (unit 1)
+        )
+      )
     )
   )
 
@@ -1307,6 +1317,11 @@
           (reference "R17") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "R17") (unit 1)
+        )
+      )
     )
   )
 
@@ -1326,8 +1341,8 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "4" (uuid 5b2e1d0f-8643-40b9-972f-327bce824588))
-    (pin "5" (uuid c12e96a4-8236-4d3b-bee6-d1343804a084))
-    (pin "5" (uuid c12e96a4-8236-4d3b-bee6-d1343804a084))
+    (pin "5" (uuid c12e96a4-8236-4d3b-bee6-d1343804a085))
+    (pin "5" (uuid c12e96a4-8236-4d3b-bee6-d1343804a085))
     (pin "6" (uuid ab79b34b-69cf-40e6-80b4-f1cc14ec3560))
     (pin "IN-" (uuid 4018eae1-12db-4d1e-9abf-3904044e434a))
     (pin "OFFSET_N1" (uuid 91c55289-060d-460b-b4ad-3cd933e2b955))
@@ -1336,6 +1351,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "opamp2") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "opamp2") (unit 1)
         )
       )
@@ -1362,6 +1382,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "R16") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "R16") (unit 1)
         )
       )
@@ -1603,6 +1628,11 @@
           (reference "R5") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "R5") (unit 1)
+        )
+      )
     )
   )
 
@@ -1765,6 +1795,11 @@
           (reference "R13") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "R13") (unit 1)
+        )
+      )
     )
   )
 
@@ -1788,6 +1823,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "R15") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "R15") (unit 1)
         )
       )
@@ -1853,6 +1893,11 @@
           (reference "R14") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "R14") (unit 1)
+        )
+      )
     )
   )
 
@@ -1876,6 +1921,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "D4") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "D4") (unit 1)
         )
       )
@@ -2113,6 +2163,11 @@
           (reference "R12") (unit 1)
         )
       )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
+          (reference "R12") (unit 1)
+        )
+      )
     )
   )
 
@@ -2340,6 +2395,11 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
+          (reference "BT2") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/d9c34bc1-cf5e-42ef-a2b2-2cfbae723006"
           (reference "BT2") (unit 1)
         )
       )
