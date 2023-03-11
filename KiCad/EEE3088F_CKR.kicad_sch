@@ -4,6 +4,15 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Root")
+    (date "2023-03-11")
+    (rev "v0.3")
+    (company "UCT")
+    (comment 1 "Authors: Cameron Clark, Robert Dugmore, Kian Frassek")
+    (comment 2 "This is an overview sheet showing how the sub-circuits interconnect")
+  )
+
   (lib_symbols
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
@@ -175,6 +184,10 @@
   (wire (pts (xy 83.82 120.65) (xy 85.09 120.65))
     (stroke (width 0) (type default))
     (uuid f34c5833-7bd1-4be3-a305-11147af8d308)
+  )
+  (wire (pts (xy 80.01 43.18) (xy 118.11 43.18))
+    (stroke (width 0) (type default))
+    (uuid fec70a58-63f1-424d-b491-e92c1392bf31)
   )
 
   (symbol (lib_id "power:+3V3") (at 116.84 55.88 90) (mirror x) (unit 1)

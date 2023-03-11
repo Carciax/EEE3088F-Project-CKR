@@ -4,6 +4,15 @@
 
   (paper "A4")
 
+  (title_block
+    (title "USB interfacing")
+    (date "2023-03-11")
+    (rev "v0.1")
+    (company "UCT")
+    (comment 1 "Author: Cameron Clark")
+    (comment 2 "For connecting the micro USB to the batttery charger and data extraction from the EEPROM")
+  )
+
   (lib_symbols
     (symbol "EEE3088F_CKR:HT42B534-2" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 6.35 0)
