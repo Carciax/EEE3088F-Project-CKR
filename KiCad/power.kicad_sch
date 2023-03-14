@@ -1900,7 +1900,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 230.124 143.256 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 4a1accac-d0c3-4fcc-92cc-49797b324719)
     (property "Reference" "J4" (at 228.6 145.288 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2972,7 +2972,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 191.262 37.592 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid dd129229-5708-4fc6-a73d-b4c3db2cf262)
     (property "Reference" "J3" (at 189.738 39.624 0)
       (effects (font (size 1.27 1.27)) (justify right))
