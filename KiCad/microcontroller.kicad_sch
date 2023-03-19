@@ -1613,7 +1613,7 @@
     (stroke (width 0) (type default))
     (uuid 18cc3880-3ce8-4344-a941-cb2a06184d82)
   )
-  (wire (pts (xy 38.862 62.484) (xy 40.132 62.484))
+  (wire (pts (xy 38.862 62.484) (xy 45.212 62.484))
     (stroke (width 0) (type default))
     (uuid 1e0e42e9-088d-4169-be8e-12fa30e39e7e)
   )
@@ -2081,7 +2081,7 @@
     (stroke (width 0) (type default))
     (uuid e1f747a7-f67e-4677-8002-4a2bab3e1b9d)
   )
-  (wire (pts (xy 38.862 56.134) (xy 40.132 56.134))
+  (wire (pts (xy 38.862 56.134) (xy 45.212 56.134))
     (stroke (width 0) (type default))
     (uuid e6739f45-83c4-4eb7-b05e-1435dc5008ab)
   )
@@ -2727,6 +2727,34 @@
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
           (reference "R11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 45.212 56.134 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0f77518e-3f10-40a5-a45e-074cea9932a9)
+    (property "Reference" "TP10" (at 50.8 55.499 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Switch2" (at 50.8 58.039 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 45.212 61.214 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 45.212 61.214 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c1a0acfc-6d3b-41bd-83b0-7eaad702cb25))
+    (instances
+      (project "EEE3088F_CKR"
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "TP10") (unit 1)
+        )
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
+          (reference "TP26") (unit 1)
         )
       )
     )
@@ -4849,6 +4877,34 @@
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
           (reference "SW4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 45.212 62.484 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f445e2df-98bd-4e44-b252-1e74be3a5fb3)
+    (property "Reference" "TP10" (at 50.8 61.849 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Switch3" (at 50.8 64.389 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 45.212 67.564 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 45.212 67.564 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4221c3a2-efba-49fb-b5b4-3d5e35bea836))
+    (instances
+      (project "EEE3088F_CKR"
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
+          (reference "TP10") (unit 1)
+        )
+        (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
+          (reference "TP27") (unit 1)
         )
       )
     )
