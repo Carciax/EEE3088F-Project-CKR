@@ -1,4 +1,4 @@
-21493501829516176
+21496860491059182
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -89579,6 +89579,13 @@ varistor
 2
 2
 footprint
+BATTERY-SMD_18650-1S-L77.1-W20.7-1
+BATTERY-SMD_18650-1S-L77.1-W20.7-1 footprint
+BATTERY-SMD_18650-1S-L77.1-W20.7-1 footprint
+0
+2
+2
+footprint
 C0402
 C0402 footprint
 C0402 footprint
@@ -89751,8 +89758,8 @@ STM32F051C6_female_header
 
 
 0
-0
-0
+48
+48
 footprint
 SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2
 SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2 footprint
@@ -89760,3 +89767,10 @@ SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2 footprint
 0
 4
 4
+footprint
+Testpoint_2.54mm
+
+
+0
+1
+1
