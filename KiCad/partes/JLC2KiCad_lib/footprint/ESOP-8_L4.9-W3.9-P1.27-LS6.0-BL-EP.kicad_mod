@@ -1,4 +1,4 @@
-(module "ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP" (layer F.Cu) (tedit 64185585)
+(module "ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP" (layer F.Cu) (tedit 64185CA9)
   (descr "ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP footprint")
   (tags "ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP footprint")
   (fp_text reference REF** (at 0 -4.908306) (layer F.SilkS)
