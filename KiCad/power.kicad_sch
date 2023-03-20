@@ -3726,7 +3726,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "TPe") (unit 1)
+          (reference "TPe1") (unit 1)
         )
       )
       (project "power"
