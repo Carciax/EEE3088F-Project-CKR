@@ -1,0 +1,62 @@
+Reference;Value;Footprint;Datasheet;DNF;Extended Part Cost;JLC code;Part name;Sim.Enable;cost per unit;Qty;cost
+C1-C4;10uf;footprint:C0603;~;;0;-- mixed values --;CL10A106KP8NNNC;;0,0066;4;0,132
+C5;100n;footprint:C0402_NEW;~;;0;C1525;CL05B104KO5NNNC;;0,0011;1;0,0055
+C6;1u;footprint:C0402;~;;0;C52923;CL05A105KA5NQNC;;0,0039;1;0,0195
+D1;LED Green;footprint:LED0805-R-RD;~;;0;C2296;17-21SUYC/TR8;;0,0119;1;0,0595
+D2;zener diode;footprint:SOD-123_L2.8-W1.8-LS3.7-RD;;;3;C36599;MMSZ4678T18;;0,0956;1;3,478
+D3;LED RED;footprint:LED0603-RD;~;;0;C2286;LED_0603;;0,0054;1;0,027
+D4, D5;LED;footprint:LED0603-RD;~;;0;C2286;LED_0603;;0,0054;2;0,054
+J1, J2;Conn_01x02_Pin;footprint:HDR-TH_2P-P2.54-V-M;~;X;0;C5116481;2.54-1*2;;0;2;0
+J3;;footprint:STM32F051C6_female_header;;;0;C2883741;X6511FV-24-C85D32;;0;1;0
+J4;Debugger;footprint:HDR-TH_3P-P2.54_CS-1165SDIG;~;;0;C2886705;CS-1165SDIG-1*3;;0;1;0
+Q1-Q7;AO3401A;footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR;http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf;;0;C15127;AO3401A;;0,0797;7;2,7895
+R1, R2, R9, R13, R14, R16-R18, R20-R24, R26-R47, R65-R72;0;footprint:R0603;~;;0;C21189;0603WAF0000T5E;-- mixed values --;0,0010;43;0,1075
+R3, R11;R1M;footprint:R0805;~;;0;C17514;0805W8F1004T5E;;0,0016;2;0,016
+R4;R2M;footprint:R0805;~;;0;C26112;0805W8F2004T5E;;0,0024;1;0,012
+R5, R8, R10, R15, R19, R56, R57;1.2k;footprint:R0805;~;;0;C17630;0805W8F3300T5E;;0,0016;7;0,056
+R6;27.5k;footprint:R0805;~;;0;C17593;0805W8F2702T5E;;0,0018;1;0,009
+R7, R64;10k;footprint:R0805;~;;0;C17414;0805W8F1002T5E;;0,0010;2;0,01
+R12;R3M;footprint:R0603;~;;0;C23156;0603WAF3004T5E;;0,0013;1;0,0065
+R25;100k;footprint:R1206;~;;0;C17900;1206W4F1003T5E;;0,0031;1;0,0155
+R48-R50, R55;3.9k;footprint:R0402;~;;0;C51721;0402WGF3901TCE;;0,0006 ;4;0,012
+R58, R63;8.2k;footprint:R0402;~;;0;C25924;0402WGF8201TCE;;0,0005;2;0,005
+RV1;R_Potentiometer;footprint:RES-ADJ-TH_RK09K1130AJ3;~;;3;C388854;RK09K1130AJ3;;0,5956;1;5,978
+SW1;Reset switch;footprint:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2;~;;0;C318884;TS-1187A-B-A-B;;0,0152;1;0,076
+SW2-SW4;switch;footprint:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2;~;;0;C318884;TS-1187A-B-A-B;;0,0152;3;0,228
+TH1;Thermistor;footprint:R0402;~;;3;C77130;NCP15WF104F03RC;;0,013;1;3,065
+TP1;5v;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP2;battery charger;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP3;UVLO;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP4;+battery out;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP5;reverse polarity ;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP6;3.3v out;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP7;Pot ADC;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP8;Therm ADC;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP9;Light SDA;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP10;Light SCL;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP11;Light Interrupt;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP14;NSRT;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP15;Switch1;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP16;Switch2;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP17;Switch3;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP18;STM32 3V3;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP19;STM32 LED1;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP20;STM32 LED2;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP21;STM32 GND;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP22;STM32 BOOT0;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP23;STM32 Tx;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP24;STM32 Rx;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP25;EEPROM SDA;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP26;EEPROM SCL;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP27;USB D-;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+TP28;USB D+;footprint:Testpoint_2.54mm;~;;0;;;;0;1;0
+U1;Battery Charger;footprint:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP;;;0;C16581;TP4056;;0,2064;1;1,032
+U2;LMV321;footprint:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR;http://www.ti.com/lit/ds/symlink/lmv324.pdf;;0;C7972;LMV321;;0,1439;1;0,7195
+U3;XC6206PxxxMR;footprint:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR;https://www.torexsemi.com/file/xc6206/XC6206.pdf;;0;C5446;XC6206P332MR;;0,0964;1;0,482
+U4;GXHTC3;footprint:DFN-6_L2.0-W2.0-P0.50-BL-EP;;;3;C2837688;GXHTC3;;0,8714;1;7,357
+U5;LTR-303ALS-01;footprint:SOT-363_L2.0-W1.3-P0.65-LS2.1-BL;http://optoelectronics.liteon.com/upload/download/DS86-2013-0004/LTR-303ALS-01_DS_V1.pdf;;3;C364577;LTR-303ALS-01;;0,3762;1;4,881
+u6;battery holder;footprint:BATTERY-SMD_18650-1S-L77.1-W20.7-1;~;x;0;C2988620;BH-18650-B1BA002;;0;1;0
+U7;24LC256;footprint:PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL;http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf;;3;C411624;24LC256;;1,6033;1;11,0165
+U8;usb;footprint:MICRO-USB-SMD_MICROXNJ;;;3;C404969;MicroXNJ;;0,0333;1;3,1665
+U9;HT42B534-2;footprint:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL;;;3;C493294;HT42B534-2;;0,7554;1;6,777
+;;;;;;;;;;;51,593
