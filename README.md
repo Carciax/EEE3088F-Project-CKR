@@ -1,4 +1,5 @@
 # EEE3088F-Project-CKR
+#Group number 12
 # Students: 
 Cameron Clark, CLRCAM007; 
 Kian Frassek, FRSKIA001; 
