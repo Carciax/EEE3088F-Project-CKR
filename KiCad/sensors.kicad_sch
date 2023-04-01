@@ -1108,7 +1108,7 @@
   (symbol (lib_id "power:GND") (at 184.15 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2261db30-3d6f-40b4-99e9-97f52f7a4a0b)
-    (property "Reference" "#PWR023" (at 184.15 120.65 0)
+    (property "Reference" "#PWR025" (at 184.15 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 184.15 119.38 0)
@@ -1124,7 +1124,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
       (project "sensors"
@@ -1157,7 +1157,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -1264,7 +1264,7 @@
           (reference "Q?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "Q6") (unit 1)
+          (reference "Q7") (unit 1)
         )
       )
       (project "power"
@@ -1278,7 +1278,7 @@
   (symbol (lib_id "power:GND") (at 201.93 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 54394813-4346-4557-87a9-7f6f3b0b1b08)
-    (property "Reference" "#PWR024" (at 201.93 63.5 0)
+    (property "Reference" "#PWR026" (at 201.93 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 201.93 62.23 0)
@@ -1294,7 +1294,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
       (project "sensors"
@@ -1339,7 +1339,7 @@
   (symbol (lib_id "power:GND") (at 234.95 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 58a59aca-d468-40a2-8c03-b57c14da8900)
-    (property "Reference" "#PWR028" (at 234.95 72.39 0)
+    (property "Reference" "#PWR030" (at 234.95 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 71.12 0)
@@ -1355,7 +1355,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
       (project "sensors"
@@ -1404,7 +1404,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R29") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
       (project "power"
@@ -1437,7 +1437,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -1482,7 +1482,7 @@
           (reference "Q?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "Q5") (unit 1)
+          (reference "Q6") (unit 1)
         )
       )
       (project "power"
@@ -1531,7 +1531,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R25") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
       (project "power"
@@ -1590,7 +1590,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R28") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
       (project "power"
@@ -1639,7 +1639,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R24") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
       (project "power"
@@ -1678,7 +1678,7 @@
   (symbol (lib_id "power:GND") (at 124.46 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a995fc8-0233-4a9a-9692-5ad126a6c553)
-    (property "Reference" "#PWR022" (at 124.46 127 0)
+    (property "Reference" "#PWR024" (at 124.46 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 125.73 0)
@@ -1694,7 +1694,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
       (project "sensors"
@@ -1744,7 +1744,7 @@
           (reference "Q?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "Q7") (unit 1)
+          (reference "Q8") (unit 1)
         )
       )
       (project "power"
@@ -1824,7 +1824,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R26") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
       (project "power"
@@ -1838,7 +1838,7 @@
   (symbol (lib_id "power:GND") (at 124.46 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bd3f05ab-1e0a-4f5c-a4bf-5bb52f65ab09)
-    (property "Reference" "#PWR020" (at 124.46 64.77 0)
+    (property "Reference" "#PWR022" (at 124.46 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 63.5 0)
@@ -1854,7 +1854,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
       (project "sensors"
@@ -1903,7 +1903,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R27") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
       (project "power"
@@ -1917,7 +1917,7 @@
   (symbol (lib_id "power:GND") (at 233.68 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c3aa0f33-1c38-4d3c-ade2-fc1eda21fc45)
-    (property "Reference" "#PWR026" (at 233.68 128.27 0)
+    (property "Reference" "#PWR028" (at 233.68 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 233.68 127 0)
@@ -1933,7 +1933,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
       (project "sensors"
@@ -2041,7 +2041,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R22") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
       (project "power"
@@ -2230,7 +2230,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -2274,7 +2274,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R23") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
       (project "power"
@@ -2307,7 +2307,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -2351,7 +2351,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "R21") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
       (project "power"
@@ -2401,7 +2401,7 @@
           (reference "Q?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/fd4dbd89-ce5b-45e9-b49b-ec599df435f0"
-          (reference "Q4") (unit 1)
+          (reference "Q5") (unit 1)
         )
       )
       (project "power"
