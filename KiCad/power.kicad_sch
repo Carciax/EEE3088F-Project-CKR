@@ -966,6 +966,7 @@
     )
   )
 
+
   (junction (at 52.07 121.92) (diameter 0) (color 0 0 0 0)
     (uuid 028e4d11-b2b4-47fe-9dc6-12c500a89526)
   )
@@ -1681,7 +1682,7 @@
     (property "Value" "0" (at 50.8 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 48.26 31.242 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 48.26 31.242 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 48.26 33.02 0)
@@ -1710,7 +1711,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R3") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
       (project "power"
@@ -1730,7 +1731,7 @@
     (property "Value" "reverse polarity " (at 264.16 31.623 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:Testpoint_2.54mm" (at 266.7 33.02 0)
+    (property "Footprint" "CustomFootprints:Testpoint" (at 266.7 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 266.7 33.02 0)
@@ -1742,6 +1743,9 @@
     (property "cost per unit" "0" (at 261.62 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "DNF" "X" (at 261.62 33.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f73532b7-096b-49af-9268-0a2a616eccef))
     (instances
       (project "EEE3088F_CKR"
@@ -1749,7 +1753,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "TP6") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
       (project "power"
@@ -1763,7 +1767,7 @@
   (symbol (lib_id "power:GND") (at 160.02 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 12de7f0d-8d41-49da-a203-55d8c840375f)
-    (property "Reference" "#PWR012" (at 160.02 72.39 0)
+    (property "Reference" "#PWR011" (at 160.02 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 160.02 70.485 0)
@@ -1779,7 +1783,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
       (project "power"
@@ -1798,7 +1802,7 @@
   (symbol (lib_id "power:+3V3") (at 269.24 105.41 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 165b8da7-515a-4eac-b2db-917c4adc5c8c)
-    (property "Reference" "#PWR020" (at 265.43 105.41 0)
+    (property "Reference" "#PWR019" (at 265.43 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 269.24 107.95 90)
@@ -1814,7 +1818,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
       (project "power"
@@ -1834,7 +1838,7 @@
     (property "Value" "5v" (at 77.47 50.673 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:Testpoint_2.54mm" (at 80.01 52.07 0)
+    (property "Footprint" "CustomFootprints:Testpoint" (at 80.01 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 80.01 52.07 0)
@@ -1844,6 +1848,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "cost per unit" "0" (at 74.93 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DNF" "X" (at 74.93 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid cffea478-4e8d-4f3a-9a81-84ea1e6973b9))
@@ -1873,7 +1880,7 @@
     (property "Value" "LED_red" (at 99.695 57.785 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 97.79 55.88 0)
+    (property "Footprint" "JLCPartFootprints:LED0603-RD" (at 97.79 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 97.79 55.88 0)
@@ -1924,7 +1931,7 @@
     (property "Value" "AO3401A" (at 135.89 114.3 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 133.985 109.22 0)
+    (property "Footprint" "JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 133.985 109.22 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" (at 135.89 104.14 0)
@@ -1971,7 +1978,7 @@
     (property "Value" "UVLO" (at 144.145 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:Testpoint_2.54mm" (at 148.59 106.68 0)
+    (property "Footprint" "CustomFootprints:Testpoint" (at 148.59 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 148.59 106.68 0)
@@ -1981,6 +1988,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "cost per unit" "0" (at 143.51 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DNF" "X" (at 143.51 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 587d9cbd-7c49-4e60-ba14-ffa02ee1b8b0))
@@ -2010,7 +2020,7 @@
     (property "Value" "XC6206PxxxMR" (at 227.33 102.108 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR" (at 227.33 99.695 0)
+    (property "Footprint" "JLCPartFootprints:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR" (at 227.33 99.695 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf" (at 227.33 105.41 0)
@@ -2051,13 +2061,13 @@
   (symbol (lib_id "Device:R") (at 81.28 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2964acfb-2eb2-4a7f-877a-6718f0fd2f6b)
-    (property "Reference" "R9" (at 83.82 145.415 0)
+    (property "Reference" "R8" (at 83.82 145.415 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 83.82 147.955 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 79.502 146.05 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 79.502 146.05 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 81.28 146.05 0)
@@ -2083,7 +2093,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R9") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
       (project "power"
@@ -2097,7 +2107,7 @@
   (symbol (lib_id "power:GND") (at 105.41 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2d8f2b33-fe68-4142-ade4-60762630948c)
-    (property "Reference" "#PWR07" (at 105.41 144.78 0)
+    (property "Reference" "#PWR06" (at 105.41 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 105.41 142.875 0)
@@ -2113,7 +2123,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
       (project "power"
@@ -2151,7 +2161,7 @@
           (reference "#PWR?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
       (project "power"
@@ -2165,13 +2175,13 @@
   (symbol (lib_id "Device:R") (at 81.28 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 348f009b-4864-42a5-9d2d-bb0569fcd237)
-    (property "Reference" "R8" (at 83.82 111.125 0)
+    (property "Reference" "R7" (at 83.82 111.125 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "27.5k" (at 83.82 113.665 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 79.502 111.76 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 79.502 111.76 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 81.28 111.76 0)
@@ -2197,7 +2207,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R8") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
       (project "power"
@@ -2217,7 +2227,7 @@
     (property "Value" "AO3401A" (at 252.73 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 254.635 40.64 0)
+    (property "Footprint" "JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 254.635 40.64 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" (at 252.73 45.72 0)
@@ -2258,7 +2268,7 @@
   (symbol (lib_id "power:GND") (at 237.49 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3769c985-60c9-454d-abeb-2b6065c50d35)
-    (property "Reference" "#PWR018" (at 237.49 119.38 0)
+    (property "Reference" "#PWR017" (at 237.49 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.792 115.316 0)
@@ -2274,7 +2284,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
       (project "power"
@@ -2293,13 +2303,13 @@
   (symbol (lib_id "Device:R") (at 125.73 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 42fe16f0-f60e-4378-9ebf-90c6feac5636)
-    (property "Reference" "R13" (at 128.27 117.475 0)
+    (property "Reference" "R12" (at 128.27 117.475 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 128.27 120.015 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 123.952 118.11 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 123.952 118.11 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 125.73 118.11 0)
@@ -2325,7 +2335,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R13") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
       (project "power"
@@ -2345,7 +2355,7 @@
     (property "Value" "01x02_male_header" (at 225.806 147.066 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "footprint:HDR-TH_2P-P2.54-V-M" (at 229.87 143.51 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 229.87 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 229.87 143.51 0)
@@ -2385,7 +2395,7 @@
   (symbol (lib_id "power:GND") (at 139.7 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ac11e90-de83-4924-9a75-3bf4cf22c7f0)
-    (property "Reference" "#PWR010" (at 139.7 81.28 0)
+    (property "Reference" "#PWR09" (at 139.7 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 79.375 0)
@@ -2401,7 +2411,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
       (project "power"
@@ -2426,7 +2436,7 @@
     (property "Value" "LED_green" (at 85.725 57.785 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 83.82 55.88 0)
+    (property "Footprint" "JLCPartFootprints:LED0603-RD" (at 83.82 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 55.88 0)
@@ -2471,13 +2481,13 @@
   (symbol (lib_id "Device:R") (at 83.82 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4bd43b0c-be21-44ae-b81e-c4b89545ee50)
-    (property "Reference" "R10" (at 86.36 62.865 0)
+    (property "Reference" "R9" (at 86.36 62.865 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.2k" (at 86.36 65.405 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 82.042 63.5 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 82.042 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 63.5 0)
@@ -2503,7 +2513,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R10") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
       (project "power"
@@ -2522,7 +2532,7 @@
   (symbol (lib_id "power:GND") (at 69.85 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4e931cc9-cc90-420e-8ba5-b8bab40fe619)
-    (property "Reference" "#PWR05" (at 69.85 66.04 0)
+    (property "Reference" "#PWR04" (at 69.85 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 64.77 0)
@@ -2538,7 +2548,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
       (project "power"
@@ -2563,7 +2573,7 @@
     (property "Value" "0" (at 229.87 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 228.6 92.202 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 228.6 92.202 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 228.6 93.98 0)
@@ -2592,7 +2602,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R20") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
       (project "power"
@@ -2606,13 +2616,13 @@
   (symbol (lib_id "Device:R") (at 48.26 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 538b5c51-bba6-4bf7-9bfb-f8ddaea991ea)
-    (property "Reference" "R4" (at 50.8 57.785 0)
+    (property "Reference" "R3" (at 50.8 57.785 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.2k" (at 50.8 60.325 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 46.482 58.42 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 46.482 58.42 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 48.26 58.42 0)
@@ -2638,7 +2648,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R4") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
       (project "power"
@@ -2687,13 +2697,13 @@
   (symbol (lib_id "Device:R") (at 203.2 62.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 662957cd-a05d-4fcf-bad8-23f9c7d6a9ab)
-    (property "Reference" "R18" (at 205.74 61.595 0)
+    (property "Reference" "R17" (at 205.74 61.595 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1.2k" (at 205.74 64.135 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "footprint:R0805" (at 204.978 62.23 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 204.978 62.23 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 62.23 0)
@@ -2719,7 +2729,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R18") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
       (project "power"
@@ -2738,7 +2748,7 @@
   (symbol (lib_id "power:GND") (at 223.52 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6b93f447-6574-42b5-80cc-9ecbf8313dfe)
-    (property "Reference" "#PWR015" (at 223.52 151.13 0)
+    (property "Reference" "#PWR014" (at 223.52 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 149.225 0)
@@ -2754,7 +2764,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
       (project "power"
@@ -2779,7 +2789,7 @@
     (property "Value" "AO3401A" (at 48.26 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 50.165 44.45 0)
+    (property "Footprint" "JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 50.165 44.45 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" (at 48.26 49.53 0)
@@ -2826,7 +2836,7 @@
     (property "Value" "0" (at 191.77 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 191.008 48.26 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 191.008 48.26 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 189.23 48.26 0)
@@ -2855,7 +2865,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R16") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
       (project "power"
@@ -2875,7 +2885,7 @@
     (property "Value" "10u" (at 209.55 111.76 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:C0603" (at 216.8652 113.03 0)
+    (property "Footprint" "JLCPartFootprints:C0603" (at 216.8652 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 215.9 109.22 0)
@@ -2915,7 +2925,7 @@
   (symbol (lib_id "power:GND") (at 52.07 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7a75b375-5602-46d9-adc9-5c33d673673d)
-    (property "Reference" "#PWR04" (at 52.07 140.97 0)
+    (property "Reference" "#PWR03" (at 52.07 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 52.07 139.065 0)
@@ -2931,7 +2941,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
       (project "power"
@@ -2983,7 +2993,7 @@
   (symbol (lib_id "power:+3V3") (at 224.79 140.97 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 806ca340-dc6f-437b-893b-734e0f9f7d93)
-    (property "Reference" "#PWR016" (at 228.6 140.97 0)
+    (property "Reference" "#PWR015" (at 228.6 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 222.758 139.7 90)
@@ -2999,7 +3009,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
       (project "power"
@@ -3013,13 +3023,13 @@
   (symbol (lib_id "Device:R") (at 52.07 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 80792a5f-0cab-4f56-949d-848b9c134eaf)
-    (property "Reference" "R7" (at 53.34 129.54 0)
+    (property "Reference" "R6" (at 53.34 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2M" (at 54.102 133.096 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 50.292 130.81 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 50.292 130.81 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 130.81 0)
@@ -3045,7 +3055,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R7") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
       (project "power"
@@ -3059,13 +3069,13 @@
   (symbol (lib_id "Device:R") (at 125.73 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83e95047-c61d-4eb9-bc8f-bb4ceeb97a61)
-    (property "Reference" "R14" (at 128.27 136.525 0)
+    (property "Reference" "R13" (at 128.27 136.525 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3M" (at 128.27 139.065 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0603" (at 123.952 137.16 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 123.952 137.16 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 125.73 137.16 0)
@@ -3091,7 +3101,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R14") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
       (project "power"
@@ -3111,7 +3121,7 @@
     (property "Value" "10u" (at 147.32 57.785 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:C0603" (at 144.4752 59.69 0)
+    (property "Footprint" "JLCPartFootprints:C0603" (at 144.4752 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 143.51 55.88 0)
@@ -3162,7 +3172,7 @@
     (property "Value" "0" (at 247.65 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 245.11 31.242 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 245.11 31.242 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 245.11 33.02 0)
@@ -3191,7 +3201,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R22") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
       (project "power"
@@ -3235,13 +3245,13 @@
   (symbol (lib_id "Device:R") (at 52.07 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8b81b9c4-1e52-49da-83ed-247b079475bd)
-    (property "Reference" "R6" (at 54.61 114.935 0)
+    (property "Reference" "R5" (at 54.61 114.935 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 54.61 117.475 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 50.292 115.57 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 50.292 115.57 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 115.57 0)
@@ -3267,7 +3277,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R6") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
       (project "power"
@@ -3287,7 +3297,7 @@
     (property "Value" "0" (at 203.2 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 207.518 100.33 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 207.518 100.33 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 205.74 100.33 0)
@@ -3316,7 +3326,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R19") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
       (project "power"
@@ -3336,7 +3346,7 @@
     (property "Value" "zener diode" (at 87.63 136.525 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOD-123_L2.8-W1.8-LS3.7-RD" (at 81.28 133.35 0)
+    (property "Footprint" "JLCPartFootprints:SOD-123_L2.8-W1.8-LS3.7-RD" (at 81.28 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 81.28 133.35 0)
@@ -3382,7 +3392,7 @@
     (property "Value" "0" (at 198.12 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 195.58 37.592 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 195.58 37.592 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 195.58 39.37 0)
@@ -3411,7 +3421,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R17") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
       (project "power"
@@ -3425,7 +3435,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 267.97 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d9c63ea-14ce-4b5d-b1fd-5ba54aa08fec)
-    (property "Reference" "#FLG07" (at 267.97 103.505 0)
+    (property "Reference" "#FLG04" (at 267.97 103.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 262.89 100.33 0)
@@ -3441,7 +3451,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#FLG07") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
       (project "power"
@@ -3455,7 +3465,7 @@
   (symbol (lib_id "power:GND") (at 143.51 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5781d85-e077-4871-9866-3bcaf3b77d7f)
-    (property "Reference" "#PWR011" (at 143.51 66.04 0)
+    (property "Reference" "#PWR010" (at 143.51 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 64.135 0)
@@ -3471,7 +3481,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
       (project "power"
@@ -3490,7 +3500,7 @@
   (symbol (lib_id "power:GND") (at 119.38 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a77737b6-44ef-4819-b472-fb2e37265960)
-    (property "Reference" "#PWR08" (at 119.38 78.74 0)
+    (property "Reference" "#PWR07" (at 119.38 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 76.835 0)
@@ -3506,7 +3516,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
       (project "power"
@@ -3525,7 +3535,7 @@
   (symbol (lib_id "power:GND") (at 132.08 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a9919a56-7660-4f9a-ad9a-3fcb1ece4710)
-    (property "Reference" "#PWR09" (at 132.08 81.28 0)
+    (property "Reference" "#PWR08" (at 132.08 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 79.375 0)
@@ -3541,7 +3551,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
       (project "power"
@@ -3566,7 +3576,7 @@
     (property "Value" "AO3401A" (at 203.2 48.895 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 205.105 49.53 0)
+    (property "Footprint" "JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR" (at 205.105 49.53 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" (at 203.2 54.61 0)
@@ -3613,7 +3623,7 @@
     (property "Value" "0" (at 82.296 96.774 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 83.82 98.298 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 83.82 98.298 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 83.82 96.52 0)
@@ -3642,7 +3652,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R11") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
       (project "power"
@@ -3656,7 +3666,7 @@
   (symbol (lib_id "power:GND") (at 215.9 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b95235d9-c5b3-4329-81ca-88176be6379d)
-    (property "Reference" "#PWR014" (at 215.9 119.38 0)
+    (property "Reference" "#PWR013" (at 215.9 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 215.9 117.475 0)
@@ -3672,7 +3682,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
       (project "power"
@@ -3691,7 +3701,7 @@
   (symbol (lib_id "power:GND") (at 227.33 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bc463951-e534-4a33-a507-866e7b2ad4d5)
-    (property "Reference" "#PWR017" (at 227.33 119.38 0)
+    (property "Reference" "#PWR016" (at 227.33 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 118.11 0)
@@ -3707,7 +3717,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
       (project "power"
@@ -3727,7 +3737,7 @@
     (property "Value" "0" (at 264.16 107.95 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 261.62 103.632 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 261.62 103.632 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 261.62 105.41 0)
@@ -3756,7 +3766,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R24") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
       (project "power"
@@ -3770,7 +3780,7 @@
   (symbol (lib_id "power:GND") (at 48.26 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c296c8c5-c15e-4518-91f1-9068215f1336)
-    (property "Reference" "#PWR03" (at 48.26 68.58 0)
+    (property "Reference" "#PWR02" (at 48.26 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 48.26 66.675 0)
@@ -3786,7 +3796,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
       (project "power"
@@ -3811,7 +3821,7 @@
     (property "Value" "10u" (at 241.3 111.125 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:C0603" (at 238.4552 113.03 0)
+    (property "Footprint" "JLCPartFootprints:C0603" (at 238.4552 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 237.49 109.22 0)
@@ -3851,7 +3861,7 @@
   (symbol (lib_id "power:GND") (at 81.28 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c474aa4e-63a1-4d0a-abda-642ac8b40bb1)
-    (property "Reference" "#PWR06" (at 81.28 156.21 0)
+    (property "Reference" "#PWR05" (at 81.28 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.28 154.305 0)
@@ -3867,7 +3877,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
       (project "power"
@@ -3886,13 +3896,13 @@
   (symbol (lib_id "Device:R") (at 252.73 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ce10f438-35cf-4de8-9d66-317b54737c8f)
-    (property "Reference" "R23" (at 255.27 53.975 0)
+    (property "Reference" "R22" (at 255.27 53.975 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.2k" (at 255.27 56.515 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 250.952 54.61 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 250.952 54.61 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 252.73 54.61 0)
@@ -3918,7 +3928,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R23") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
       (project "power"
@@ -3937,13 +3947,13 @@
   (symbol (lib_id "Device:R") (at 132.08 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0b21973-37e1-4beb-b485-a7c43fc7e773)
-    (property "Reference" "R15" (at 134.62 69.215 0)
+    (property "Reference" "R14" (at 134.62 69.215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.2k" (at 134.62 71.755 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:R0805" (at 130.302 69.85 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 130.302 69.85 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 69.85 0)
@@ -3969,7 +3979,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R15") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
       (project "power"
@@ -3994,7 +4004,7 @@
     (property "Value" "0" (at 49.53 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 53.848 101.6 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 53.848 101.6 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.07 101.6 0)
@@ -4023,7 +4033,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R5") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
       (project "power"
@@ -4043,7 +4053,7 @@
     (property "Value" "3.3v out" (at 248.92 104.013 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:Testpoint_2.54mm" (at 251.46 105.41 0)
+    (property "Footprint" "CustomFootprints:Testpoint" (at 251.46 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 251.46 105.41 0)
@@ -4055,6 +4065,9 @@
     (property "cost per unit" "0" (at 246.38 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "DNF" "X" (at 246.38 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 974f6743-a8d3-4587-b167-12f262b3f574))
     (instances
       (project "EEE3088F_CKR"
@@ -4062,7 +4075,7 @@
           (reference "TP?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "TP5") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
       (project "power"
@@ -4076,7 +4089,7 @@
   (symbol (lib_id "power:GND") (at 252.73 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dbbc53b4-353c-459c-be1d-9c2b9d91fedb)
-    (property "Reference" "#PWR019" (at 252.73 64.77 0)
+    (property "Reference" "#PWR018" (at 252.73 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 252.73 62.865 0)
@@ -4092,7 +4105,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
       (project "power"
@@ -4117,7 +4130,7 @@
     (property "Value" "01x02_male_header" (at 168.91 67.31 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "footprint:HDR-TH_2P-P2.54-V-M" (at 179.07 62.23 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 179.07 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 179.07 62.23 0)
@@ -4157,13 +4170,13 @@
   (symbol (lib_id "Device:R") (at 97.79 63.5 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4cea9ab-ef2f-4296-afee-d7613a2ad8f7)
-    (property "Reference" "R12" (at 100.33 62.865 0)
+    (property "Reference" "R11" (at 100.33 62.865 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1.2k" (at 100.33 65.405 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "footprint:R0805" (at 99.568 63.5 90)
+    (property "Footprint" "JLCPartFootprints:R0805" (at 99.568 63.5 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 97.79 63.5 0)
@@ -4189,7 +4202,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R12") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
       (project "power"
@@ -4214,7 +4227,7 @@
     (property "Value" "LMV321IDBVR" (at 110.49 123.19 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR" (at 107.95 128.27 0)
+    (property "Footprint" "JLCPartFootprints:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR" (at 107.95 128.27 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf" (at 107.95 128.27 0)
@@ -4263,7 +4276,7 @@
     (property "Value" "0" (at 236.22 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 240.538 39.37 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 240.538 39.37 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 238.76 39.37 0)
@@ -4292,7 +4305,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R21") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
       (project "power"
@@ -4312,7 +4325,7 @@
     (property "Value" "10u" (at 72.39 57.15 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:C0603" (at 70.8152 59.69 0)
+    (property "Footprint" "JLCPartFootprints:C0603" (at 70.8152 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.85 55.88 0)
@@ -4363,13 +4376,13 @@
     (property "Value" "battery holder" (at 161.925 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:BATTERY-SMD_18650-1S-L77.1-W20.7-1" (at 160.02 56.896 90)
+    (property "Footprint" "JLCPartFootprints:BATTERY-SMD_18650-1S-L77.1-W20.7-1" (at 160.02 56.896 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 160.02 56.896 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DNF" "x" (at 160.02 58.42 0)
+    (property "DNF" "X" (at 160.02 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Extended Part Cost" "0" (at 160.02 58.42 0)
@@ -4409,7 +4422,7 @@
     (property "Value" "battery charger" (at 138.43 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "footprint:Testpoint_2.54mm" (at 152.4 52.07 0)
+    (property "Footprint" "CustomFootprints:Testpoint" (at 152.4 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 52.07 0)
@@ -4419,6 +4432,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "cost per unit" "0" (at 147.32 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DNF" "X" (at 147.32 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3654030e-fd68-4f9c-bda5-c92648bc8eed))
@@ -4448,7 +4464,7 @@
     (property "Value" "0" (at 35.56 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:R0603" (at 39.878 41.91 90)
+    (property "Footprint" "JLCPartFootprints:R0603" (at 39.878 41.91 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 38.1 41.91 0)
@@ -4477,7 +4493,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/d53a003e-af2e-46c6-8ee9-c5701cef8adb"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
       (project "power"
@@ -4497,7 +4513,7 @@
     (property "Value" "Battery Charger" (at 120.65 47.752 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "footprint:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP" (at 119.38 57.15 0)
+    (property "Footprint" "JLCPartFootprints:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP" (at 119.38 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 119.38 57.15 0)
