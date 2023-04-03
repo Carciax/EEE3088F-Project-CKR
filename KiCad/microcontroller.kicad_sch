@@ -2076,7 +2076,6 @@
     )
   )
 
-
   (junction (at 245.11 72.39) (diameter 0) (color 0 0 0 0)
     (uuid 0b2f1763-4363-444d-8657-c44c9c586bca)
   )
@@ -3763,7 +3762,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "R56") (unit 1)
+          (reference "R54") (unit 1)
         )
       )
       (project "power"
@@ -4045,7 +4044,7 @@
   (symbol (lib_id "power:GND") (at 260.35 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2fc733d3-cc89-4f9f-804c-6890ba84ad58)
-    (property "Reference" "#PWR045" (at 260.35 123.19 0)
+    (property "Reference" "#PWR044" (at 260.35 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 260.35 121.92 0)
@@ -4061,7 +4060,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -4268,7 +4267,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "R55") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
       (project "power"
@@ -4631,7 +4630,7 @@
   (symbol (lib_id "Device:R") (at 260.35 147.32 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83b12671-82bc-4b82-8add-67df459b386c)
-    (property "Reference" "R57" (at 261.112 147.574 90)
+    (property "Reference" "R55" (at 261.112 147.574 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 258.318 147.574 90)
@@ -4663,7 +4662,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "R57") (unit 1)
+          (reference "R55") (unit 1)
         )
       )
     )
@@ -4791,7 +4790,7 @@
   (symbol (lib_id "power:+3V3") (at 247.65 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 992de8dc-7cde-4767-9c38-88c86cfb8494)
-    (property "Reference" "#PWR043" (at 247.65 105.41 0)
+    (property "Reference" "#PWR042" (at 247.65 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 247.65 97.79 0)
@@ -4807,7 +4806,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -5083,7 +5082,7 @@
   (symbol (lib_id "Device:R") (at 270.51 111.76 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b4dcdbce-657b-4ef8-9c7f-b9e24e3125d6)
-    (property "Reference" "R59" (at 271.272 112.014 90)
+    (property "Reference" "R57" (at 271.272 112.014 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 268.478 112.014 90)
@@ -5115,7 +5114,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "R59") (unit 1)
+          (reference "R57") (unit 1)
         )
       )
     )
@@ -5124,7 +5123,7 @@
   (symbol (lib_id "Device:R") (at 270.51 109.22 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b5154c04-c208-4fd7-9530-b1a6abe56e7b)
-    (property "Reference" "R58" (at 271.272 109.474 90)
+    (property "Reference" "R56" (at 271.272 109.474 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 268.478 109.474 90)
@@ -5156,7 +5155,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "R58") (unit 1)
+          (reference "R56") (unit 1)
         )
       )
     )
@@ -5506,7 +5505,7 @@
   (symbol (lib_id "power:GND") (at 234.95 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d6329fcd-692a-4dec-b86b-c5f7bec013f8)
-    (property "Reference" "#PWR042" (at 234.95 123.19 0)
+    (property "Reference" "#PWR041" (at 234.95 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 121.92 0)
@@ -5522,7 +5521,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -5531,7 +5530,7 @@
   (symbol (lib_id "power:GND") (at 247.65 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9aae32d-7475-42c2-aa8e-83c375e965fa)
-    (property "Reference" "#PWR044" (at 247.65 128.27 0)
+    (property "Reference" "#PWR043" (at 247.65 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 247.65 127 0)
@@ -5547,7 +5546,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -5867,7 +5866,7 @@
           (reference "R?") (unit 1)
         )
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "R54") (unit 1)
+          (reference "R52") (unit 1)
         )
       )
       (project "power"
@@ -5881,7 +5880,7 @@
   (symbol (lib_id "power:+3V3") (at 205.74 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fbc7121e-7f0a-4116-b613-4b66daaf9629)
-    (property "Reference" "#PWR041" (at 205.74 128.27 0)
+    (property "Reference" "#PWR040" (at 205.74 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 207.01 121.92 0)
@@ -5897,7 +5896,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
