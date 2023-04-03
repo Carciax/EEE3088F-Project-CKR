@@ -25,6 +25,10 @@
     (stroke (width 0) (type default))
     (uuid 1178573a-4256-4205-beba-ac56aff2c21d)
   )
+  (wire (pts (xy 250.19 99.06) (xy 250.19 60.96))
+    (stroke (width 0) (type default))
+    (uuid 2a3ff493-3904-42fb-a28d-b5d5aa34fbf4)
+  )
   (wire (pts (xy 81.28 127) (xy 118.11 127))
     (stroke (width 0) (type default))
     (uuid 37a0064b-a07e-4125-904f-1b2e27413cce)
@@ -40,6 +44,10 @@
   (wire (pts (xy 195.58 107.95) (xy 231.14 107.95))
     (stroke (width 0) (type default))
     (uuid 5efaf846-ef89-4131-96b5-40ebb7b69861)
+  )
+  (wire (pts (xy 250.19 60.96) (xy 172.72 60.96))
+    (stroke (width 0) (type default))
+    (uuid 6a3bf7f2-94a0-42a3-8f02-77b5d79d1c99)
   )
   (wire (pts (xy 81.28 144.78) (xy 118.11 144.78))
     (stroke (width 0) (type default))
@@ -119,6 +127,10 @@
     (pin "Debugger_SCL" bidirectional (at 231.14 121.92 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 7071bd2e-c455-43db-b4f2-b8dbf84c41d5)
+    )
+    (pin "Plug_Detect_5V" input (at 250.19 99.06 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 56dab7a7-82f3-4b20-af78-84e87ed1970e)
     )
     (instances
       (project "EEE3088F_CKR"
@@ -217,6 +229,10 @@
     )
     (property "Sheetfile" "power.kicad_sch" (at 124.46 75.5146 0)
       (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "Plug_Detect_5V" output (at 172.72 60.96 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 0ae08ee2-5c77-4b4d-acac-b4d0135e53db)
     )
     (instances
       (project "EEE3088F_CKR"

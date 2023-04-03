@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/robert/Dropbox/2023 Work/EEE3088F/EEE3088F-Project-CKR/KiCad/EEE3088F_CKR.kicad_sch</source>
-    <date>Tue 21 Mar 2023 11:44:22</date>
+    <date>Mon 03 Apr 2023 16:50:32</date>
     <tool>Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -26,7 +26,7 @@
       <title_block>
         <title>Power Subsystem Schematic</title>
         <company>UCT</company>
-        <rev>0.5</rev>
+        <rev>0.10</rev>
         <date>2023-03-11</date>
         <source>power.kicad_sch</source>
         <comment number="1" value="Author: Kian Frassek"/>
@@ -62,7 +62,7 @@
       <title_block>
         <title>Microcontoller subsystem</title>
         <company>UCT</company>
-        <rev>v0.8</rev>
+        <rev>v0.9</rev>
         <date>2023-03-11</date>
         <source>microcontroller.kicad_sch</source>
         <comment number="1" value="Author: Cameron Clark"/>
@@ -78,14 +78,14 @@
     </sheet>
     <sheet number="5" name="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/">
       <title_block>
-        <title>USB interfacing</title>
+        <title>USB interfacing and 10 pin debugger</title>
         <company>UCT</company>
-        <rev>v0.2</rev>
+        <rev>v0.3</rev>
         <date>2023-03-11</date>
         <source>USB.kicad_sch</source>
-        <comment number="1" value="Author: Cameron Clark"/>
+        <comment number="1" value="Author: Cameron Clark and Robert Dugmore"/>
         <comment number="2" value="For connecting the micro USB to the batttery charger and data extraction from the EEPROM"/>
-        <comment number="3" value=""/>
+        <comment number="3" value="For connecting the required 10 pin debugger"/>
         <comment number="4" value=""/>
         <comment number="5" value=""/>
         <comment number="6" value=""/>
@@ -97,18 +97,18 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>10uf</value>
-      <footprint>footprint:C0603</footprint>
+      <value>10u</value>
+      <footprint>JLCPartFootprints:C0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2988620</field>
+        <field name="JLC code">C19702</field>
         <field name="Part name">CL10A106KP8NNNC</field>
         <field name="cost per unit">0,0066</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2988620"/>
+      <property name="JLC code" value="C19702"/>
       <property name="Part name" value="CL10A106KP8NNNC"/>
       <property name="cost per unit" value="0,0066"/>
       <property name="Sheetname" value="Power"/>
@@ -119,8 +119,8 @@
       <tstamps>ebd1b11e-7728-4801-9574-ab24cc7325eb</tstamps>
     </comp>
     <comp ref="C2">
-      <value>10uf</value>
-      <footprint>footprint:C0603</footprint>
+      <value>10u</value>
+      <footprint>JLCPartFootprints:C0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C19702</field>
@@ -141,8 +141,8 @@
       <tstamps>84a8934e-34be-460f-a04d-888b2a62ebe5</tstamps>
     </comp>
     <comp ref="C3">
-      <value>10uf</value>
-      <footprint>footprint:C0603</footprint>
+      <value>10u</value>
+      <footprint>JLCPartFootprints:C0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C19702</field>
@@ -163,8 +163,8 @@
       <tstamps>79a6556e-cbd5-44f0-83bf-003382bb2a12</tstamps>
     </comp>
     <comp ref="C4">
-      <value>10uf</value>
-      <footprint>footprint:C0603</footprint>
+      <value>10u</value>
+      <footprint>JLCPartFootprints:C0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C19702</field>
@@ -185,30 +185,8 @@
       <tstamps>c35b5b32-45e1-4d88-8c5c-3bb148d3d5ec</tstamps>
     </comp>
     <comp ref="D1">
-      <value>LED Green</value>
-      <footprint>footprint:LED0805-R-RD</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2296</field>
-        <field name="Part name">17-21SUYC/TR8</field>
-        <field name="cost per unit">0,0119</field>
-      </fields>
-      <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2296"/>
-      <property name="Part name" value="17-21SUYC/TR8"/>
-      <property name="cost per unit" value="0,0119"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="Light emitting diode"/>
-      <property name="ki_keywords" value="LED diode"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>4b6babe6-7d6d-42ae-8dc3-688976025760</tstamps>
-    </comp>
-    <comp ref="D2">
       <value>zener diode</value>
-      <footprint>footprint:SOD-123_L2.8-W1.8-LS3.7-RD</footprint>
+      <footprint>JLCPartFootprints:SOD-123_L2.8-W1.8-LS3.7-RD</footprint>
       <fields>
         <field name="Extended Part Cost">3</field>
         <field name="JLC code">C36599</field>
@@ -226,21 +204,43 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>92485932-3957-4e66-bd36-976da646c250</tstamps>
     </comp>
+    <comp ref="D2">
+      <value>LED_green</value>
+      <footprint>JLCPartFootprints:LED0603-RD</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C72043</field>
+        <field name="Part name">19-217/GHC-YR1S2/3T</field>
+        <field name="cost per unit">0.0264</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C72043"/>
+      <property name="Part name" value="19-217/GHC-YR1S2/3T"/>
+      <property name="cost per unit" value="0.0264"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>4b6babe6-7d6d-42ae-8dc3-688976025760</tstamps>
+    </comp>
     <comp ref="D3">
-      <value>LED RED</value>
-      <footprint>footprint:LED0603-RD</footprint>
+      <value>LED_red</value>
+      <footprint>JLCPartFootprints:LED0603-RD</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C2286</field>
-        <field name="Part name">LED_0603</field>
-        <field name="cost per unit">0,0054</field>
+        <field name="Part name">KT-0603R</field>
+        <field name="cost per unit">0.0054</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C2286"/>
-      <property name="Part name" value="LED_0603"/>
-      <property name="cost per unit" value="0,0054"/>
+      <property name="Part name" value="KT-0603R"/>
+      <property name="cost per unit" value="0.0054"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
@@ -249,20 +249,18 @@
       <tstamps>1f30e00c-16eb-43a1-9c7d-45948be46428</tstamps>
     </comp>
     <comp ref="J1">
-      <value>Conn_01x02_Pin</value>
-      <footprint>footprint:HDR-TH_2P-P2.54-V-M</footprint>
+      <value>01x02_male_header</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <fields>
         <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C5116481</field>
-        <field name="Part name">2.54-1*2</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
       <property name="DNF" value="X"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C5116481"/>
-      <property name="Part name" value="2.54-1*2"/>
+      <property name="JLC code" value=""/>
+      <property name="Part name" value=""/>
       <property name="cost per unit" value="0"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -273,20 +271,18 @@
       <tstamps>dd129229-5708-4fc6-a73d-b4c3db2cf262</tstamps>
     </comp>
     <comp ref="J2">
-      <value>Conn_01x02_Pin</value>
-      <footprint>footprint:HDR-TH_2P-P2.54-V-M</footprint>
+      <value>01x02_male_header</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <fields>
         <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C5116481</field>
-        <field name="Part name">2.54-1*2</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
       <property name="DNF" value="X"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C5116481"/>
-      <property name="Part name" value="2.54-1*2"/>
+      <property name="JLC code" value=""/>
+      <property name="Part name" value=""/>
       <property name="cost per unit" value="0"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
@@ -298,20 +294,43 @@
     </comp>
     <comp ref="Q1">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>6eaddacc-d551-4e7e-9630-9e63edd52e4c</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>AO3401A</value>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C15127</field>
+        <field name="Part name">AO3401A</field>
+        <field name="cost per unit">0,07965</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C15127"/>
+      <property name="Part name" value="AO3401A"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
@@ -319,45 +338,45 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>218e07a0-c239-4645-899a-8c2431f379b6</tstamps>
     </comp>
-    <comp ref="Q2">
+    <comp ref="Q3">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>ae646af1-a534-4f65-87f4-c20a9400cf5e</tstamps>
+      <tstamps>ac2e1bbb-1634-4d0e-aab9-1c1a29e24dd9</tstamps>
     </comp>
-    <comp ref="Q3">
+    <comp ref="Q4">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
@@ -367,7 +386,7 @@
     </comp>
     <comp ref="R1">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -385,11 +404,56 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>729ed134-8e37-42dc-8a28-fc8d7dea0f93</tstamps>
+      <tstamps>f4425a87-2c57-4387-ad04-9947e96b18d5</tstamps>
     </comp>
     <comp ref="R2">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>0b64d539-19a5-4aa4-8f4e-9c59740138da</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1.2k</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C17630</field>
+        <field name="Part name">0805W8F3300T5E</field>
+        <field name="cost per unit">0,0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C17630"/>
+      <property name="Part name" value="0805W8F3300T5E"/>
+      <property name="cost per unit" value="0,0016"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>538b5c51-bba6-4bf7-9bfb-f8ddaea991ea</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -409,9 +473,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>d13a566a-991b-42f6-83a8-262760109070</tstamps>
     </comp>
-    <comp ref="R3">
-      <value>R1M</value>
-      <footprint>footprint:R0805</footprint>
+    <comp ref="R5">
+      <value>1M</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17514</field>
@@ -431,9 +495,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>8b81b9c4-1e52-49da-83ed-247b079475bd</tstamps>
     </comp>
-    <comp ref="R4">
-      <value>R2M</value>
-      <footprint>footprint:R0805</footprint>
+    <comp ref="R6">
+      <value>2M</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C26112</field>
@@ -453,43 +517,21 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>80792a5f-0cab-4f56-949d-848b9c134eaf</tstamps>
     </comp>
-    <comp ref="R5">
-      <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C17630</field>
-        <field name="Part name">0805W8F3300T5E</field>
-        <field name="cost per unit">0,0016</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C17630"/>
-      <property name="Part name" value="0805W8F3300T5E"/>
-      <property name="cost per unit" value="0,0016"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>4bd43b0c-be21-44ae-b81e-c4b89545ee50</tstamps>
-    </comp>
-    <comp ref="R6">
+    <comp ref="R7">
       <value>27.5k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17593</field>
         <field name="Part name">0805W8F2702T5E</field>
-        <field name="cost per unit">0,0018</field>
+        <field name="cost per unit">0,0017</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C17593"/>
       <property name="Part name" value="0805W8F2702T5E"/>
-      <property name="cost per unit" value="0,0018"/>
+      <property name="cost per unit" value="0,0017"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
@@ -497,9 +539,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>348f009b-4864-42a5-9d2d-bb0569fcd237</tstamps>
     </comp>
-    <comp ref="R7">
+    <comp ref="R8">
       <value>10k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17414</field>
@@ -519,9 +561,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>2964acfb-2eb2-4a7f-877a-6718f0fd2f6b</tstamps>
     </comp>
-    <comp ref="R8">
+    <comp ref="R9">
       <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17630</field>
@@ -539,11 +581,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>e4cea9ab-ef2f-4296-afee-d7613a2ad8f7</tstamps>
+      <tstamps>4bd43b0c-be21-44ae-b81e-c4b89545ee50</tstamps>
     </comp>
-    <comp ref="R9">
+    <comp ref="R10">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -564,9 +606,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>b6e7bdf7-4af7-46bf-bb17-8926f5362005</tstamps>
     </comp>
-    <comp ref="R10">
+    <comp ref="R11">
       <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17630</field>
@@ -584,11 +626,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>d0b21973-37e1-4beb-b485-a7c43fc7e773</tstamps>
+      <tstamps>e4cea9ab-ef2f-4296-afee-d7613a2ad8f7</tstamps>
     </comp>
-    <comp ref="R11">
-      <value>R1M</value>
-      <footprint>footprint:R0805</footprint>
+    <comp ref="R12">
+      <value>1M</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17514</field>
@@ -608,9 +650,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>42fe16f0-f60e-4378-9ebf-90c6feac5636</tstamps>
     </comp>
-    <comp ref="R12">
-      <value>R3M</value>
-      <footprint>footprint:R0603</footprint>
+    <comp ref="R13">
+      <value>3M</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C23156</field>
@@ -630,9 +672,31 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>83e95047-c61d-4eb9-bc8f-bb4ceeb97a61</tstamps>
     </comp>
-    <comp ref="R13">
+    <comp ref="R14">
+      <value>1.2k</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C17630</field>
+        <field name="Part name">0805W8F3300T5E</field>
+        <field name="cost per unit">0,0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C17630"/>
+      <property name="Part name" value="0805W8F3300T5E"/>
+      <property name="cost per unit" value="0,0016"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>d0b21973-37e1-4beb-b485-a7c43fc7e773</tstamps>
+    </comp>
+    <comp ref="R15">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -650,11 +714,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>dd7d3da6-c1cf-460e-8a23-571b7fb30fb7</tstamps>
+      <tstamps>7547b4cf-7b68-410e-8de8-6df6de227a95</tstamps>
     </comp>
-    <comp ref="R14">
+    <comp ref="R16">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -673,11 +737,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>aa6da314-87fc-4802-a68e-b5400376a15e</tstamps>
+      <tstamps>9caaae44-b4ea-47af-92d6-eaf81e836314</tstamps>
     </comp>
-    <comp ref="R15">
+    <comp ref="R17">
       <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17630</field>
@@ -695,33 +759,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>138ab37a-b5cd-46eb-9964-90a36b51b17c</tstamps>
+      <tstamps>662957cd-a05d-4fcf-bad8-23f9c7d6a9ab</tstamps>
     </comp>
-    <comp ref="R16">
+    <comp ref="R18">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>eae3344b-68c4-49fb-9ec3-9614f1fad13e</tstamps>
-    </comp>
-    <comp ref="R17">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -741,54 +783,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>8d845a11-5782-4f5e-8dba-a0e148336d21</tstamps>
     </comp>
-    <comp ref="R18">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="dnp"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>86110a5c-37f1-46a6-8d27-d7197856761a</tstamps>
-    </comp>
     <comp ref="R19">
-      <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C17630</field>
-        <field name="Part name">0805W8F3300T5E</field>
-        <field name="cost per unit">0,0016</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C17630"/>
-      <property name="Part name" value="0805W8F3300T5E"/>
-      <property name="cost per unit" value="0,0016"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>ce10f438-35cf-4de8-9d66-317b54737c8f</tstamps>
-    </comp>
-    <comp ref="R20">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -809,16 +806,107 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>4ebd1a0a-51f0-4530-8194-eee92af8e295</tstamps>
     </comp>
+    <comp ref="R20">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>eae3344b-68c4-49fb-9ec3-9614f1fad13e</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>86110a5c-37f1-46a6-8d27-d7197856761a</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>1.2k</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C17630</field>
+        <field name="Part name">0805W8F3300T5E</field>
+        <field name="cost per unit">0,0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C17630"/>
+      <property name="Part name" value="0805W8F3300T5E"/>
+      <property name="cost per unit" value="0,0016"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>ce10f438-35cf-4de8-9d66-317b54737c8f</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>bc679fa1-9528-4de1-be2e-9ec64d50ecdb</tstamps>
+    </comp>
     <comp ref="TP1">
       <value>5v</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -827,32 +915,17 @@
       <tstamps>16fa1637-3703-4487-843b-e79db3849602</tstamps>
     </comp>
     <comp ref="TP2">
-      <value>battery charger</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>f1de3047-e1af-46eb-b7d4-3dd2370bbf93</tstamps>
-    </comp>
-    <comp ref="TP3">
       <value>UVLO</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -860,50 +933,37 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>221e7461-903c-4577-8d44-88109ccf19ed</tstamps>
     </comp>
+    <comp ref="TP3">
+      <value>battery charger</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>f1de3047-e1af-46eb-b7d4-3dd2370bbf93</tstamps>
+    </comp>
     <comp ref="TP4">
-      <value>+battery out</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>eee7b203-6bb3-4c7c-9f74-d9f023bb53f8</tstamps>
-    </comp>
-    <comp ref="TP5">
-      <value>reverse polarity </value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>0fac6eab-6b9c-4f9b-a3aa-e11fe50e35eb</tstamps>
-    </comp>
-    <comp ref="TP6">
       <value>3.3v out</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -911,42 +971,41 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>d9f5b5f4-1512-46c1-854e-a1a7f3caaf0b</tstamps>
     </comp>
-    <comp ref="U1">
-      <value>Battery Charger</value>
-      <footprint>footprint:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP</footprint>
+    <comp ref="TP5">
+      <value>reverse polarity </value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C16581</field>
-        <field name="Part name">TP4056</field>
-        <field name="cost per unit">0,2064</field>
+        <field name="cost per unit">0</field>
       </fields>
-      <libsource lib="Power comonentes" part="TP4056" description=""/>
-      <property name="DNF" value=""/>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C16581"/>
-      <property name="Part name" value="TP4056"/>
-      <property name="cost per unit" value="0,2064"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>f68838ee-0f94-4dba-b5c4-822deed4b98e</tstamps>
+      <tstamps>0fac6eab-6b9c-4f9b-a3aa-e11fe50e35eb</tstamps>
     </comp>
-    <comp ref="U2">
-      <value>LMV321</value>
-      <footprint>footprint:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR</footprint>
+    <comp ref="U1">
+      <value>LMV321IDBVR</value>
+      <footprint>JLCPartFootprints:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/lmv324.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C7972</field>
         <field name="Part name">LMV321</field>
-        <field name="cost per unit">0,1439</field>
+        <field name="cost per unit">0.1456</field>
       </fields>
       <libsource lib="Amplifier_Operational" part="LMV321" description="Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C7972"/>
       <property name="Part name" value="LMV321"/>
-      <property name="cost per unit" value="0,1439"/>
+      <property name="cost per unit" value="0.1456"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_description" value="Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"/>
@@ -954,9 +1013,53 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>e648f817-4563-4336-820e-bb79e43565c9</tstamps>
     </comp>
-    <comp ref="U3">
+    <comp ref="U2">
+      <value>Battery Charger</value>
+      <footprint>JLCPartFootprints:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C16581</field>
+        <field name="Part name">TP4056</field>
+        <field name="cost per unit">0.2148</field>
+      </fields>
+      <libsource lib="Power comonentes" part="TP4056" description=""/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C16581"/>
+      <property name="Part name" value="TP4056"/>
+      <property name="cost per unit" value="0.2148"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>f68838ee-0f94-4dba-b5c4-822deed4b98e</tstamps>
+    </comp>
+    <comp ref="u3">
+      <value>battery holder</value>
+      <footprint>JLCPartFootprints:BATTERY-SMD_18650-1S-L77.1-W20.7-1</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C2988620</field>
+        <field name="Part name">BH-18650-B1BA002</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <property name="DNF" value="X"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C2988620"/>
+      <property name="Part name" value="BH-18650-B1BA002"/>
+      <property name="cost per unit" value="0"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Multiple-cell battery"/>
+      <property name="ki_keywords" value="batt voltage-source cell"/>
+      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
+      <tstamps>eecfddec-7d59-4e48-869b-c9649da8868b</tstamps>
+    </comp>
+    <comp ref="U4">
       <value>XC6206PxxxMR</value>
-      <footprint>footprint:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR</footprint>
       <datasheet>https://www.torexsemi.com/file/xc6206/XC6206.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
@@ -977,33 +1080,9 @@
       <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
       <tstamps>2442271d-237e-479d-a1c6-5cce967341e4</tstamps>
     </comp>
-    <comp ref="u6">
-      <value>battery holder</value>
-      <footprint>footprint:BATTERY-SMD_18650-1S-L77.1-W20.7-1</footprint>
-      <fields>
-        <field name="DNF">x</field>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2988620</field>
-        <field name="Part name">BH-18650-B1BA002</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
-      <property name="DNF" value="x"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2988620"/>
-      <property name="Part name" value="BH-18650-B1BA002"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Power"/>
-      <property name="Sheetfile" value="power.kicad_sch"/>
-      <property name="dnp"/>
-      <property name="ki_description" value="Multiple-cell battery"/>
-      <property name="ki_keywords" value="batt voltage-source cell"/>
-      <sheetpath names="/Power/" tstamps="/d53a003e-af2e-46c6-8ee9-c5701cef8adb/"/>
-      <tstamps>eecfddec-7d59-4e48-869b-c9649da8868b</tstamps>
-    </comp>
     <comp ref="C5">
       <value>100n</value>
-      <footprint>footprint:C0402_NEW</footprint>
+      <footprint>JLCPartFootprints:C0402</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C1525</field>
@@ -1025,7 +1104,7 @@
     </comp>
     <comp ref="C6">
       <value>1u</value>
-      <footprint>footprint:C0402</footprint>
+      <footprint>JLCPartFootprints:C0402</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C52923</field>
@@ -1045,22 +1124,22 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>c5ec314a-7722-47a0-9521-0c8ed69ed3b6</tstamps>
     </comp>
-    <comp ref="Q4">
+    <comp ref="Q5">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
@@ -1068,22 +1147,22 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>ea3eda44-d9a2-4b54-87f4-6f0ef7eb9eca</tstamps>
     </comp>
-    <comp ref="Q5">
+    <comp ref="Q6">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
@@ -1091,22 +1170,22 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>634f8202-c456-47d4-90d0-e847862e60d1</tstamps>
     </comp>
-    <comp ref="Q6">
+    <comp ref="Q7">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
@@ -1114,22 +1193,22 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>371accec-ec79-4ab9-8481-b56d78005595</tstamps>
     </comp>
-    <comp ref="Q7">
+    <comp ref="Q8">
       <value>AO3401A</value>
-      <footprint>footprint:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <footprint>JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
       <datasheet>http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C15127</field>
         <field name="Part name">AO3401A</field>
-        <field name="cost per unit">0,0797</field>
+        <field name="cost per unit">0,07965</field>
       </fields>
       <libsource lib="Transistor_FET" part="AO3401A" description="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
       <property name="JLC code" value="C15127"/>
       <property name="Part name" value="AO3401A"/>
-      <property name="cost per unit" value="0,0797"/>
+      <property name="cost per unit" value="0,07965"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
@@ -1137,9 +1216,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>9c2950a0-0689-4b24-bfec-dd80fa47caea</tstamps>
     </comp>
-    <comp ref="R21">
+    <comp ref="R24">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1160,9 +1239,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>e7d09f24-e09b-4d8a-bb02-db5e020f9230</tstamps>
     </comp>
-    <comp ref="R22">
+    <comp ref="R25">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1183,9 +1262,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>c85ebab9-63b4-4e3d-8901-38268cb0699b</tstamps>
     </comp>
-    <comp ref="R23">
+    <comp ref="R26">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1205,9 +1284,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>de72fdbd-bfaf-449c-9375-24518a44bdfe</tstamps>
     </comp>
-    <comp ref="R24">
+    <comp ref="R27">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1227,9 +1306,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>817c8a6f-5da1-4755-8461-5c96d46ef7d5</tstamps>
     </comp>
-    <comp ref="R25">
+    <comp ref="R28">
       <value>100k</value>
-      <footprint>footprint:R1206</footprint>
+      <footprint>JLCPartFootprints:R1206</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17900</field>
@@ -1249,9 +1328,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>7317ae89-350d-4eaa-9535-b43a1bb3b16f</tstamps>
     </comp>
-    <comp ref="R26">
+    <comp ref="R29">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1272,9 +1351,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>b3dd152a-92a7-4939-ac4f-2c7f9a149570</tstamps>
     </comp>
-    <comp ref="R27">
+    <comp ref="R30">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1295,9 +1374,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>bf335e47-0916-4234-b254-569a0f964ac2</tstamps>
     </comp>
-    <comp ref="R28">
+    <comp ref="R31">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1317,9 +1396,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>7b4f230f-1389-4841-b317-9b78ec44a231</tstamps>
     </comp>
-    <comp ref="R29">
+    <comp ref="R32">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1341,7 +1420,7 @@
     </comp>
     <comp ref="RV1">
       <value>R_Potentiometer</value>
-      <footprint>footprint:RES-ADJ-TH_RK09K1130AJ3</footprint>
+      <footprint>JLCPartFootprints:RES-ADJ-TH_RK09K1130AJ3</footprint>
       <fields>
         <field name="Extended Part Cost">3</field>
         <field name="JLC code">C388854</field>
@@ -1363,19 +1442,19 @@
     </comp>
     <comp ref="TH1">
       <value>Thermistor</value>
-      <footprint>footprint:R0402</footprint>
+      <footprint>JLCPartFootprints:R0402</footprint>
       <fields>
         <field name="Extended Part Cost">3 </field>
         <field name="JLC code">C77130</field>
         <field name="Part name">NCP15WF104F03RC</field>
-        <field name="cost per unit">0.0130</field>
+        <field name="cost per unit">0.0126</field>
       </fields>
       <libsource lib="Device" part="Thermistor" description="Temperature dependent resistor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="3 "/>
       <property name="JLC code" value="C77130"/>
       <property name="Part name" value="NCP15WF104F03RC"/>
-      <property name="cost per unit" value="0.0130"/>
+      <property name="cost per unit" value="0.0126"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="Temperature dependent resistor"/>
@@ -1383,16 +1462,18 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>f626f54b-6083-4dd3-923f-875e00510c5f</tstamps>
     </comp>
-    <comp ref="TP7">
+    <comp ref="TP6">
       <value>Pot ADC</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -1400,33 +1481,18 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>57f6f97f-ff7b-4bf0-aa0f-28877ac2e5b2</tstamps>
     </comp>
-    <comp ref="TP8">
-      <value>Therm ADC</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+    <comp ref="TP7">
+      <value>Sensors SDA</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Sensors"/>
-      <property name="Sheetfile" value="sensors.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
-      <tstamps>a50c1d6d-7984-48e1-8f3b-48d4a4528172</tstamps>
-    </comp>
-    <comp ref="TP9">
-      <value>Light SDA</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -1434,16 +1500,18 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>34ff99d6-d78f-4d81-91ab-0cf4de829608</tstamps>
     </comp>
-    <comp ref="TP10">
-      <value>Light SCL</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+    <comp ref="TP8">
+      <value>Sensors SCL</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -1451,16 +1519,37 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>039e8133-90fe-4028-b9e8-fe1422baadad</tstamps>
     </comp>
-    <comp ref="TP11">
-      <value>Light Interrupt</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+    <comp ref="TP9">
+      <value>Therm ADC</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Sensors"/>
+      <property name="Sheetfile" value="sensors.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
+      <tstamps>a50c1d6d-7984-48e1-8f3b-48d4a4528172</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>Light Interrupt</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Sensors"/>
       <property name="Sheetfile" value="sensors.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -1468,9 +1557,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>307affed-6172-4f7a-b0ee-4f026f422e00</tstamps>
     </comp>
-    <comp ref="U4">
+    <comp ref="U5">
       <value>GXHTC3</value>
-      <footprint>footprint:DFN-6_L2.0-W2.0-P0.50-BL-EP</footprint>
+      <footprint>JLCPartFootprints:DFN-6_L2.0-W2.0-P0.50-BL-EP</footprint>
       <fields>
         <field name="Extended Part Cost">3</field>
         <field name="JLC code">C2837688</field>
@@ -1488,9 +1577,9 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>ed1babd3-cad2-464b-b9bd-3666cada8464</tstamps>
     </comp>
-    <comp ref="U5">
+    <comp ref="U6">
       <value>LTR-303ALS-01</value>
-      <footprint>footprint:SOT-363_L2.0-W1.3-P0.65-LS2.1-BL</footprint>
+      <footprint>JLCPartFootprints:SOT-363_L2.0-W1.3-P0.65-LS2.1-BL</footprint>
       <datasheet>http://optoelectronics.liteon.com/upload/download/DS86-2013-0004/LTR-303ALS-01_DS_V1.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">3</field>
@@ -1511,21 +1600,61 @@
       <sheetpath names="/Sensors/" tstamps="/fd4dbd89-ce5b-45e9-b49b-ec599df435f0/"/>
       <tstamps>d375af8d-0d8a-4c4a-8942-a4b5362c266f</tstamps>
     </comp>
-    <comp ref="D4">
-      <value>LED</value>
-      <footprint>footprint:LED0603-RD</footprint>
+    <comp ref="C7">
+      <value>33pF</value>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2286</field>
-        <field name="Part name">LED_0603</field>
-        <field name="cost per unit">0,0054</field>
+        <field name="JLC code">C1570</field>
+        <field name="Part name">0402CG300J500NT</field>
+        <field name="cost per unit">0.0010</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C1570"/>
+      <property name="Part name" value="0402CG300J500NT"/>
+      <property name="cost per unit" value="0.0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>4f430b4c-d859-478c-a3ad-deb728f2242a</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>33pF</value>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C1570</field>
+        <field name="Part name">0402CG300J500NT</field>
+        <field name="cost per unit">0.0010</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C1570"/>
+      <property name="Part name" value="0402CG300J500NT"/>
+      <property name="cost per unit" value="0.0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>151d14e2-e95b-4708-9e9d-a94d1df9bf4a</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED_white</value>
+      <footprint>JLCPartFootprints:LED0805-R-RD</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C34499</field>
+        <field name="Part name">C34499</field>
+        <field name="cost per unit">0.0157</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2286"/>
-      <property name="Part name" value="LED_0603"/>
-      <property name="cost per unit" value="0,0054"/>
+      <property name="JLC code" value="C34499"/>
+      <property name="Part name" value="C34499"/>
+      <property name="cost per unit" value="0.0157"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
@@ -1534,20 +1663,20 @@
       <tstamps>9eed69c9-bf4c-4900-b432-88361b6b6d23</tstamps>
     </comp>
     <comp ref="D5">
-      <value>LED</value>
-      <footprint>footprint:LED0603-RD</footprint>
+      <value>LED_white</value>
+      <footprint>JLCPartFootprints:LED0805-R-RD</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2286</field>
-        <field name="Part name">LED_0603</field>
-        <field name="cost per unit">0,0054</field>
+        <field name="JLC code">C34499</field>
+        <field name="Part name">C34499</field>
+        <field name="cost per unit">0.0157</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2286"/>
-      <property name="Part name" value="LED_0603"/>
-      <property name="cost per unit" value="0,0054"/>
+      <property name="JLC code" value="C34499"/>
+      <property name="Part name" value="C34499"/>
+      <property name="cost per unit" value="0.0157"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode"/>
@@ -1556,19 +1685,18 @@
       <tstamps>a128dbdd-ee21-4346-ad12-6a934885e085</tstamps>
     </comp>
     <comp ref="J3">
-      <value>~</value>
-      <footprint>footprint:STM32F051C6_female_header</footprint>
+      <value>STM32F051C6_female_header</value>
+      <footprint>CustomFootprints:STM32F051C6_female_header</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2883741</field>
-        <field name="Part name">X6511FV-24-C85D32</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="EEE3088F_CKR" part="STM32F051C6_female_header" description=""/>
-      <property name="DNF" value=""/>
+      <property name="DNF" value="X"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2883741"/>
-      <property name="Part name" value="X6511FV-24-C85D32"/>
+      <property name="JLC code" value=""/>
+      <property name="Part name" value=""/>
       <property name="cost per unit" value="0"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
@@ -1577,19 +1705,36 @@
       <tstamps>b52eed65-52f2-496f-880a-48fac1ef43fc</tstamps>
     </comp>
     <comp ref="J4">
-      <value>Debugger</value>
-      <footprint>footprint:HDR-TH_3P-P2.54_CS-1165SDIG</footprint>
+      <value>STM32F051C6_testpoints</value>
+      <footprint>CustomFootprints:STM32F051C6_testpoints</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C2886705</field>
-        <field name="Part name">CS-1165SDIG-1*3</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="EEE3088F_CKR" part="STM32F051C6_testpoints" description=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>e8b8bb9e-f3f6-4060-b238-6fbcf494a04e</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>STM-link_debugger</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="DNF" value=""/>
+      <property name="DNF" value="X"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C2886705"/>
-      <property name="Part name" value="CS-1165SDIG-1*3"/>
+      <property name="JLC code" value=""/>
+      <property name="Part name" value=""/>
       <property name="cost per unit" value="0"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
@@ -1599,53 +1744,89 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>b746afa1-e2df-4754-95c2-7fc989737503</tstamps>
     </comp>
-    <comp ref="R30">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
+    <comp ref="JP1">
+      <value>01x02_male_header_jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
+        <field name="cost per unit">0</field>
       </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>1ba143d0-6669-400a-bc24-0ec70a48b574</tstamps>
+      <tstamps>defe6125-1bae-4eb6-ae17-3d8820d2a35e</tstamps>
     </comp>
-    <comp ref="R31">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
+    <comp ref="JP2">
+      <value>01x02_male_header_jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
+        <field name="cost per unit">0</field>
       </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>28ba5b02-848c-46f3-9929-5356a17c01ce</tstamps>
+      <tstamps>be4cd413-3ac5-480c-b4ed-1ca1bba1ce79</tstamps>
     </comp>
-    <comp ref="R32">
+    <comp ref="JP3">
+      <value>01x02_male_header_jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>26a6b12f-6887-4a3f-9038-8ebfc65a8d3a</tstamps>
+    </comp>
+    <comp ref="JP4">
+      <value>01x02_male_header_jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>7fc4e387-e516-4ec1-8e0a-e441ed3f44e8</tstamps>
+    </comp>
+    <comp ref="R33">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1663,11 +1844,55 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>7a7e024f-6cd1-4ed8-b66e-9d0f5847a76c</tstamps>
+      <tstamps>afccd5a8-01b0-45ea-ba40-df5a09cfd744</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>ae3c62d7-3ff4-4cb6-9109-e2d9382a13dd</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>b92e1dcc-8260-4a68-82f3-8e4c8a9c0847</tstamps>
     </comp>
     <comp ref="R36">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1685,11 +1910,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>8b2078ac-c878-4d40-a98b-99c9852c9e39</tstamps>
+      <tstamps>00ada4e6-d4d0-479d-b7b1-d74fb5b0edc8</tstamps>
     </comp>
     <comp ref="R37">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -1707,187 +1932,11 @@
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>813fab86-93c4-4129-adeb-3fd05d1e3c4d</tstamps>
+      <tstamps>3cfa135b-6581-43ba-8e3c-d3747dacb944</tstamps>
     </comp>
-    <comp ref="R40">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>ae5b6e5e-569d-4dcf-a4d9-4be8e442a586</tstamps>
-    </comp>
-    <comp ref="R41">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>8d836509-4220-45ea-b6a1-7679c9fabf91</tstamps>
-    </comp>
-    <comp ref="R42">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>17586317-9792-46a1-9128-646e7a16de80</tstamps>
-    </comp>
-    <comp ref="R43">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>4d4d84bf-441a-47d8-b4c5-5a522f91c008</tstamps>
-    </comp>
-    <comp ref="R48">
-      <value>3.9k</value>
-      <footprint>footprint:R0402</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C51721</field>
-        <field name="Part name">0402WGF3901TCE</field>
-        <field name="cost per unit">0,0006 </field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C51721"/>
-      <property name="Part name" value="0402WGF3901TCE"/>
-      <property name="cost per unit" value="0,0006 "/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>11779daf-3336-4435-b897-f06baa81749b</tstamps>
-    </comp>
-    <comp ref="R49">
-      <value>3.9k</value>
-      <footprint>footprint:R0402</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C51721</field>
-        <field name="Part name">0402WGF3901TCE</field>
-        <field name="cost per unit">0,0006 </field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C51721"/>
-      <property name="Part name" value="0402WGF3901TCE"/>
-      <property name="cost per unit" value="0,0006 "/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>27246572-8754-499a-b839-8ee71c386eac</tstamps>
-    </comp>
-    <comp ref="R50">
-      <value>3.9k</value>
-      <footprint>footprint:R0402</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C51721</field>
-        <field name="Part name">0402WGF3901TCE</field>
-        <field name="cost per unit">0,0006 </field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C51721"/>
-      <property name="Part name" value="0402WGF3901TCE"/>
-      <property name="cost per unit" value="0,0006 "/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>6359f52b-cae2-47fb-9127-dc2f0037aef6</tstamps>
-    </comp>
-    <comp ref="R55">
-      <value>3.9k</value>
-      <footprint>footprint:R0402</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C51721</field>
-        <field name="Part name">0402WGF3901TCE</field>
-        <field name="cost per unit">0,0006 </field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="DNF" value=""/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C51721"/>
-      <property name="Part name" value="0402WGF3901TCE"/>
-      <property name="cost per unit" value="0,0006 "/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>7b8192bf-11c3-476b-86f6-0bc44231b972</tstamps>
-    </comp>
-    <comp ref="R56">
+    <comp ref="R38">
       <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17630</field>
@@ -1907,9 +1956,9 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>31a8e422-b56e-4915-8fd0-88e5000bf5cc</tstamps>
     </comp>
-    <comp ref="R57">
+    <comp ref="R39">
       <value>1.2k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17630</field>
@@ -1929,53 +1978,207 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>5c01af93-7b7e-4643-89d2-4e06a20e33cc</tstamps>
     </comp>
-    <comp ref="R58">
-      <value>8.2k</value>
-      <footprint>footprint:R0402</footprint>
+    <comp ref="R40">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C25924</field>
-        <field name="Part name">0402WGF8201TCE</field>
-        <field name="cost per unit">0,0005</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C25924"/>
-      <property name="Part name" value="0402WGF8201TCE"/>
-      <property name="cost per unit" value="0,0005"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>f700a68f-fe94-4b39-8d63-7673a2f2dfce</tstamps>
+      <tstamps>1ba143d0-6669-400a-bc24-0ec70a48b574</tstamps>
     </comp>
-    <comp ref="R63">
-      <value>8.2k</value>
-      <footprint>footprint:R0402</footprint>
+    <comp ref="R41">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C25924</field>
-        <field name="Part name">0402WGF8201TCE</field>
-        <field name="cost per unit">0,0005</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C25924"/>
-      <property name="Part name" value="0402WGF8201TCE"/>
-      <property name="cost per unit" value="0,0005"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>4b21d54c-82ae-4992-a7a9-3b1f60cb95e5</tstamps>
+      <tstamps>28ba5b02-848c-46f3-9929-5356a17c01ce</tstamps>
     </comp>
-    <comp ref="R64">
+    <comp ref="R42">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>7a7e024f-6cd1-4ed8-b66e-9d0f5847a76c</tstamps>
+    </comp>
+    <comp ref="R43">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>8b2078ac-c878-4d40-a98b-99c9852c9e39</tstamps>
+    </comp>
+    <comp ref="R44">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>813fab86-93c4-4129-adeb-3fd05d1e3c4d</tstamps>
+    </comp>
+    <comp ref="R45">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>ae5b6e5e-569d-4dcf-a4d9-4be8e442a586</tstamps>
+    </comp>
+    <comp ref="R46">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>8d836509-4220-45ea-b6a1-7679c9fabf91</tstamps>
+    </comp>
+    <comp ref="R47">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>17586317-9792-46a1-9128-646e7a16de80</tstamps>
+    </comp>
+    <comp ref="R48">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>4d4d84bf-441a-47d8-b4c5-5a522f91c008</tstamps>
+    </comp>
+    <comp ref="R49">
       <value>10k</value>
-      <footprint>footprint:R0805</footprint>
+      <footprint>JLCPartFootprints:R0805</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C17414</field>
@@ -1995,55 +2198,75 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>e77265ba-c275-40a9-b1da-27f273c5bd5d</tstamps>
     </comp>
-    <comp ref="R65">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
+    <comp ref="R50">
+      <value>3.9k</value>
+      <footprint>JLCPartFootprints:R0402</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
+        <field name="JLC code">C51721</field>
+        <field name="Part name">0402WGF3901TCE</field>
+        <field name="cost per unit">0,0006 </field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
+      <property name="JLC code" value="C51721"/>
+      <property name="Part name" value="0402WGF3901TCE"/>
+      <property name="cost per unit" value="0,0006 "/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="dnp"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>a07ef306-0ca4-458e-aae3-65206a22d57f</tstamps>
+      <tstamps>11779daf-3336-4435-b897-f06baa81749b</tstamps>
     </comp>
-    <comp ref="R66">
-      <value>0</value>
-      <footprint>footprint:R0603</footprint>
+    <comp ref="R51">
+      <value>3.9k</value>
+      <footprint>JLCPartFootprints:R0402</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
-        <field name="JLC code">C21189</field>
-        <field name="Part name">0603WAF0000T5E</field>
-        <field name="cost per unit">0,0010</field>
+        <field name="JLC code">C51721</field>
+        <field name="Part name">0402WGF3901TCE</field>
+        <field name="cost per unit">0,0006 </field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="DNF" value=""/>
       <property name="Extended Part Cost" value="0"/>
-      <property name="JLC code" value="C21189"/>
-      <property name="Part name" value="0603WAF0000T5E"/>
-      <property name="cost per unit" value="0,0010"/>
+      <property name="JLC code" value="C51721"/>
+      <property name="Part name" value="0402WGF3901TCE"/>
+      <property name="cost per unit" value="0,0006 "/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="dnp"/>
       <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>cec54616-02ec-44f8-ae31-9bdbfc5e646d</tstamps>
+      <tstamps>27246572-8754-499a-b839-8ee71c386eac</tstamps>
     </comp>
-    <comp ref="R67">
+    <comp ref="R52">
+      <value>8.2k</value>
+      <footprint>JLCPartFootprints:R0402</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C25924</field>
+        <field name="Part name">0402WGF8201TCE</field>
+        <field name="cost per unit">0,0005</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C25924"/>
+      <property name="Part name" value="0402WGF8201TCE"/>
+      <property name="cost per unit" value="0,0005"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>f700a68f-fe94-4b39-8d63-7673a2f2dfce</tstamps>
+    </comp>
+    <comp ref="R53">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -2063,9 +2286,9 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>4faa90d6-c63f-4a83-84bf-130a71517456</tstamps>
     </comp>
-    <comp ref="R68">
+    <comp ref="R54">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -2085,9 +2308,31 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>1923f2f0-7059-429b-86e4-e183318b44aa</tstamps>
     </comp>
-    <comp ref="R69">
+    <comp ref="R55">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>83b12671-82bc-4b82-8add-67df459b386c</tstamps>
+    </comp>
+    <comp ref="R56">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -2107,9 +2352,9 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>b5154c04-c208-4fd7-9530-b1a6abe56e7b</tstamps>
     </comp>
-    <comp ref="R70">
+    <comp ref="R57">
       <value>0</value>
-      <footprint>footprint:R0603</footprint>
+      <footprint>JLCPartFootprints:R0603</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C21189</field>
@@ -2131,7 +2376,7 @@
     </comp>
     <comp ref="SW1">
       <value>Reset switch</value>
-      <footprint>footprint:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
+      <footprint>JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C318884</field>
@@ -2152,8 +2397,8 @@
       <tstamps>6b840557-f16d-4b2a-ba97-41a66d6cc159</tstamps>
     </comp>
     <comp ref="SW2">
-      <value>switch</value>
-      <footprint>footprint:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
+      <value>Switch</value>
+      <footprint>JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C318884</field>
@@ -2174,8 +2419,8 @@
       <tstamps>16907e5c-0434-4582-9c3c-9998ca31cdb1</tstamps>
     </comp>
     <comp ref="SW3">
-      <value>switch</value>
-      <footprint>footprint:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
+      <value>Switch</value>
+      <footprint>JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C318884</field>
@@ -2196,8 +2441,8 @@
       <tstamps>6511833d-cec4-4430-969d-100e4b30df96</tstamps>
     </comp>
     <comp ref="SW4">
-      <value>switch</value>
-      <footprint>footprint:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
+      <value>Switch</value>
+      <footprint>JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2</footprint>
       <fields>
         <field name="Extended Part Cost">0</field>
         <field name="JLC code">C318884</field>
@@ -2217,203 +2462,170 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>f0843622-546d-4a48-95ce-adecd217aa5d</tstamps>
     </comp>
-    <comp ref="TP14">
-      <value>NSRT</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+    <comp ref="TP11">
+      <value>LED 1</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
       <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>2f06103c-5a8c-4336-a023-ea83e539d364</tstamps>
+      <tstamps>452ffcd0-8f46-47a5-8e8a-18bafa2a7494</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>LED 2</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>82931adb-718b-4229-80d0-f6d46940b9cd</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>Switch 1</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>aa76f25e-3db7-4cd0-a8fa-3749b5cfb1a1</tstamps>
+    </comp>
+    <comp ref="TP14">
+      <value>Switch 2</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>007a60c2-0916-4e3d-8843-f3a79ad3502f</tstamps>
     </comp>
     <comp ref="TP15">
-      <value>Switch1</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <value>Switch 3</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
       <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>27c90e59-2e6b-4996-99a0-a9dae3e35774</tstamps>
+      <tstamps>21588df1-6b84-4324-a9f7-e87295aa2229</tstamps>
     </comp>
     <comp ref="TP16">
-      <value>Switch2</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <value>uc Tx</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
       <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>0f77518e-3f10-40a5-a45e-074cea9932a9</tstamps>
+      <tstamps>bf669c51-9183-42dd-8323-33e66f61dcab</tstamps>
     </comp>
     <comp ref="TP17">
-      <value>Switch3</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <value>uc Rx</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
       <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>f445e2df-98bd-4e44-b252-1e74be3a5fb3</tstamps>
+      <tstamps>95e17e4a-3072-4859-93a3-a4ebc69e2389</tstamps>
     </comp>
     <comp ref="TP18">
-      <value>STM32 3V3</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <value>Plug Detect</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
       <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>1438e556-04fc-4f1e-897d-a5cfe665d20f</tstamps>
+      <tstamps>2857e34b-d3ec-455c-befc-f599dc859968</tstamps>
     </comp>
     <comp ref="TP19">
-      <value>STM32 LED1</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>b89c0d25-c664-4844-bacd-e8a44383cd68</tstamps>
-    </comp>
-    <comp ref="TP20">
-      <value>STM32 LED2</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>55036810-e1b1-462d-803b-2826b8a06f35</tstamps>
-    </comp>
-    <comp ref="TP21">
-      <value>STM32 GND</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>e2c73747-3911-4725-b47b-b19e1db5fec0</tstamps>
-    </comp>
-    <comp ref="TP22">
-      <value>STM32 BOOT0</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>34c24cac-5c91-4f3d-9698-6b880b9ab99d</tstamps>
-    </comp>
-    <comp ref="TP23">
-      <value>STM32 Tx</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>99e048f3-d7d5-4b9d-ad77-e0bc6090756e</tstamps>
-    </comp>
-    <comp ref="TP24">
-      <value>STM32 Rx</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
-      <fields>
-        <field name="Extended Part Cost">0</field>
-        <field name="cost per unit">0</field>
-      </fields>
-      <libsource lib="Connector" part="TestPoint" description="test point"/>
-      <property name="Extended Part Cost" value="0"/>
-      <property name="cost per unit" value="0"/>
-      <property name="Sheetname" value="Microcontroller"/>
-      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
-      <property name="ki_description" value="test point"/>
-      <property name="ki_keywords" value="test point tp"/>
-      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
-      <tstamps>02d9ff28-a35b-4ea2-b2ca-91a4f8181129</tstamps>
-    </comp>
-    <comp ref="TP25">
       <value>EEPROM SDA</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -2421,16 +2633,18 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>d54e2d87-4c2a-4f16-a63d-f459aca56eb8</tstamps>
     </comp>
-    <comp ref="TP26">
+    <comp ref="TP20">
       <value>EEPROM SCL</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="Microcontroller"/>
       <property name="Sheetfile" value="microcontroller.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -2440,7 +2654,7 @@
     </comp>
     <comp ref="U7">
       <value>24LC256</value>
-      <footprint>footprint:PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL</footprint>
+      <footprint>JLCPartFootprints:PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf</datasheet>
       <fields>
         <field name="Extended Part Cost">3</field>
@@ -2461,16 +2675,186 @@
       <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
       <tstamps>52f46125-97c8-407e-9837-8b38ea408d1b</tstamps>
     </comp>
-    <comp ref="TP27">
-      <value>USB D-</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+    <comp ref="Y1">
+      <value>Crystal</value>
       <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C12674</field>
+        <field name="Part name">X49SM8MSD2SC</field>
+        <field name="cost per unit">0.0864</field>
+      </fields>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C12674"/>
+      <property name="Part name" value="X49SM8MSD2SC"/>
+      <property name="cost per unit" value="0.0864"/>
+      <property name="Sheetname" value="Microcontroller"/>
+      <property name="Sheetfile" value="microcontroller.kicad_sch"/>
+      <property name="ki_description" value="Two pin crystal"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
+      <sheetpath names="/Microcontroller/" tstamps="/781e4e3c-a3ff-4e52-b852-0676e4a3ef49/"/>
+      <tstamps>24e07b4b-8c5b-45d1-a3d1-12778b145efc</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>01x10_male_header</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x10_Pin" description="Generic connector, single row, 01x10, script generated"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Generic connector, single row, 01x10, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>20f23c8b-24d6-41d5-989b-a1d8df9d5d11</tstamps>
+    </comp>
+    <comp ref="JP5">
+      <value>01x03_male_header_jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_3_Bridged12" description="Jumper, 3-pole, pins 1+2 closed/bridged"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Jumper, 3-pole, pins 1+2 closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPDT"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>2fec70fa-6051-4361-8012-3c0d1f3d3e45</tstamps>
+    </comp>
+    <comp ref="JP6">
+      <value>01x03_male_header_jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="DNF">X</field>
+        <field name="Extended Part Cost">0</field>
+        <field name="cost per unit">0</field>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_3_Bridged12" description="Jumper, 3-pole, pins 1+2 closed/bridged"/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Jumper, 3-pole, pins 1+2 closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPDT"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>2f1963d4-e72b-4731-aaf4-c9c8b410eee1</tstamps>
+    </comp>
+    <comp ref="R58">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>384c903b-d2e6-4862-a48c-485cff6b14d9</tstamps>
+    </comp>
+    <comp ref="R59">
+      <value>10k</value>
+      <footprint>JLCPartFootprints:R0805</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C17414</field>
+        <field name="Part name">0805W8F1002T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C17414"/>
+      <property name="Part name" value="0805W8F1002T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>ac48d687-cb10-47be-83bf-d04f2d69eb48</tstamps>
+    </comp>
+    <comp ref="R60">
+      <value>20k</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C4184</field>
+        <field name="Part name">0603WAF2002T5E</field>
+        <field name="cost per unit">0.0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C4184"/>
+      <property name="Part name" value="0603WAF2002T5E"/>
+      <property name="cost per unit" value="0.0010"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>0ab1e933-0312-4627-a0db-499654c0c14c</tstamps>
+    </comp>
+    <comp ref="R61">
+      <value>0</value>
+      <footprint>JLCPartFootprints:R0603</footprint>
+      <fields>
+        <field name="Extended Part Cost">0</field>
+        <field name="JLC code">C21189</field>
+        <field name="Part name">0603WAF0000T5E</field>
+        <field name="cost per unit">0,0010</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="DNF" value=""/>
+      <property name="Extended Part Cost" value="0"/>
+      <property name="JLC code" value="C21189"/>
+      <property name="Part name" value="0603WAF0000T5E"/>
+      <property name="cost per unit" value="0,0010"/>
+      <property name="Sheetname" value="USB"/>
+      <property name="Sheetfile" value="USB.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
+      <tstamps>cd25517d-4529-474d-a8d6-e615d66be9e5</tstamps>
+    </comp>
+    <comp ref="TP21">
+      <value>USB D-</value>
+      <footprint>CustomFootprints:Testpoint</footprint>
+      <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="USB"/>
       <property name="Sheetfile" value="USB.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -2478,16 +2862,18 @@
       <sheetpath names="/USB/" tstamps="/4be356fb-1e37-446a-bf93-f98ec62d54dd/"/>
       <tstamps>250464c9-93ed-40b2-8220-50e615187220</tstamps>
     </comp>
-    <comp ref="TP28">
+    <comp ref="TP22">
       <value>USB D+</value>
-      <footprint>footprint:Testpoint_2.54mm</footprint>
+      <footprint>CustomFootprints:Testpoint</footprint>
       <fields>
+        <field name="DNF">X</field>
         <field name="Extended Part Cost">0</field>
         <field name="cost per unit">0</field>
       </fields>
       <libsource lib="Connector" part="TestPoint" description="test point"/>
       <property name="Extended Part Cost" value="0"/>
       <property name="cost per unit" value="0"/>
+      <property name="DNF" value="X"/>
       <property name="Sheetname" value="USB"/>
       <property name="Sheetfile" value="USB.kicad_sch"/>
       <property name="ki_description" value="test point"/>
@@ -2497,7 +2883,7 @@
     </comp>
     <comp ref="U8">
       <value>usb</value>
-      <footprint>footprint:MICRO-USB-SMD_MICROXNJ</footprint>
+      <footprint>JLCPartFootprints:MICRO-USB-SMD_MICROXNJ</footprint>
       <fields>
         <field name="Extended Part Cost">3</field>
         <field name="JLC code">C404969</field>
@@ -2517,7 +2903,7 @@
     </comp>
     <comp ref="U9">
       <value>HT42B534-2</value>
-      <footprint>footprint:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL</footprint>
+      <footprint>JLCPartFootprints:SOP-8_L4.9-W3.9-P1.27-LS6.0-BL</footprint>
       <fields>
         <field name="Extended Part Cost">3</field>
         <field name="JLC code">C493294</field>
@@ -2590,6 +2976,30 @@
         <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Connector" part="Conn_01x10_Pin">
+      <description>Generic connector, single row, 01x10, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Connector" part="TestPoint">
       <description>test point</description>
       <docs>~</docs>
@@ -2633,6 +3043,38 @@
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="LED">
@@ -2771,6 +3213,99 @@
         <pin num="46" name="PB9_" type="passive"/>
         <pin num="47" name="VSS_" type="passive"/>
         <pin num="48" name="VDD_" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EEE3088F_CKR" part="STM32F051C6_testpoints">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">STM32F051C6_testpoints</field>
+      </fields>
+      <pins>
+        <pin num="1" name="_VBAT" type="passive"/>
+        <pin num="2" name="_PC13" type="passive"/>
+        <pin num="3" name="_PC14" type="passive"/>
+        <pin num="4" name="_PC15" type="passive"/>
+        <pin num="5" name="_PF0" type="passive"/>
+        <pin num="6" name="_PF1" type="passive"/>
+        <pin num="7" name="_NSRT" type="passive"/>
+        <pin num="8" name="_VSSA" type="passive"/>
+        <pin num="9" name="_VDDA" type="passive"/>
+        <pin num="10" name="_PA0" type="passive"/>
+        <pin num="11" name="_PA1" type="passive"/>
+        <pin num="12" name="_PA2" type="passive"/>
+        <pin num="13" name="_PA3" type="passive"/>
+        <pin num="14" name="_PA4" type="passive"/>
+        <pin num="15" name="_PA5" type="passive"/>
+        <pin num="16" name="_PA6" type="passive"/>
+        <pin num="17" name="_PA7" type="passive"/>
+        <pin num="18" name="_PB0" type="passive"/>
+        <pin num="19" name="_PB1" type="passive"/>
+        <pin num="20" name="_PB2" type="passive"/>
+        <pin num="21" name="_PB10" type="passive"/>
+        <pin num="22" name="_PB11" type="passive"/>
+        <pin num="23" name="_VSS" type="passive"/>
+        <pin num="24" name="_VDD" type="passive"/>
+        <pin num="25" name="PB12_" type="passive"/>
+        <pin num="26" name="PB13_" type="passive"/>
+        <pin num="27" name="PB14_" type="passive"/>
+        <pin num="28" name="PB15_" type="passive"/>
+        <pin num="29" name="PA8_" type="passive"/>
+        <pin num="30" name="PA9_" type="passive"/>
+        <pin num="31" name="PA10_" type="passive"/>
+        <pin num="32" name="PA11_" type="passive"/>
+        <pin num="33" name="PA12_" type="passive"/>
+        <pin num="34" name="PA13_" type="passive"/>
+        <pin num="35" name="PA6_" type="passive"/>
+        <pin num="36" name="PF7_" type="passive"/>
+        <pin num="37" name="PA14_" type="passive"/>
+        <pin num="38" name="PA15_" type="passive"/>
+        <pin num="39" name="PB3_" type="passive"/>
+        <pin num="40" name="PB4_" type="passive"/>
+        <pin num="41" name="PB5_" type="passive"/>
+        <pin num="42" name="PB6_" type="passive"/>
+        <pin num="43" name="PB7_" type="passive"/>
+        <pin num="44" name="BOOT0_" type="passive"/>
+        <pin num="45" name="PB8_" type="passive"/>
+        <pin num="46" name="PB9_" type="passive"/>
+        <pin num="47" name="VSS_" type="passive"/>
+        <pin num="48" name="VDD_" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_2_Bridged">
+      <description>Jumper, 2-pole, closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Bridged</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_3_Bridged12">
+      <description>Jumper, 3-pole, pins 1+2 closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*3Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_3_Bridged12</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Memory_EEPROM" part="24LC256">
@@ -2939,6 +3474,12 @@
     <library logical="Device">
       <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
+    <library logical="EEE3088F_CKR">
+      <uri>/home/robert/Dropbox/2023 Work/EEE3088F/EEE3088F-Project-CKR/KiCad/EEE3088F_CKR.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/usr/share/kicad/symbols//Jumper.kicad_sym</uri>
+    </library>
     <library logical="Memory_EEPROM">
       <uri>/usr/share/kicad/symbols//Memory_EEPROM.kicad_sym</uri>
     </library>
@@ -2963,246 +3504,351 @@
   </libraries>
   <nets>
     <net code="1" name="+3V3">
-      <node ref="C4" pin="1" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J3" pin="1" pinfunction="_VBAT" pintype="passive"/>
       <node ref="J3" pin="24" pinfunction="_VDD" pintype="passive"/>
       <node ref="J3" pin="48" pinfunction="VDD_" pintype="passive"/>
       <node ref="J3" pin="9" pinfunction="_VDDA" pintype="passive"/>
-      <node ref="R20" pin="1" pintype="passive"/>
-      <node ref="R21" pin="2" pintype="passive"/>
-      <node ref="R22" pin="2" pintype="passive"/>
-      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="_VBAT" pintype="passive"/>
+      <node ref="J4" pin="24" pinfunction="_VDD" pintype="passive"/>
+      <node ref="J4" pin="48" pinfunction="VDD_" pintype="passive"/>
+      <node ref="J4" pin="9" pinfunction="_VDDA" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
       <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
       <node ref="R26" pin="2" pintype="passive"/>
       <node ref="R27" pin="2" pintype="passive"/>
-      <node ref="R28" pin="2" pintype="passive"/>
       <node ref="R29" pin="2" pintype="passive"/>
-      <node ref="R48" pin="2" pintype="passive"/>
-      <node ref="R49" pin="2" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R32" pin="2" pintype="passive"/>
       <node ref="R50" pin="2" pintype="passive"/>
-      <node ref="R55" pin="2" pintype="passive"/>
-      <node ref="R58" pin="2" pintype="passive"/>
-      <node ref="R63" pin="2" pintype="passive"/>
-      <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U3" pin="2" pinfunction="VO" pintype="power_out"/>
+      <node ref="R51" pin="2" pintype="passive"/>
+      <node ref="R52" pin="2" pintype="passive"/>
       <node ref="U7" pin="8" pinfunction="VCC" pintype="power_in"/>
       <node ref="U9" pin="3" pinfunction="VDDIO" pintype="input"/>
       <node ref="U9" pin="8" pinfunction="V330" pintype="input"/>
     </net>
     <net code="2" name="+5V">
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R59" pin="1" pintype="passive"/>
       <node ref="U8" pin="1" pinfunction="VBUS" pintype="input"/>
       <node ref="U9" pin="7" pinfunction="VDD" pintype="input"/>
     </net>
     <net code="3" name="/Microcontroller/BOOT0">
       <node ref="J3" pin="44" pinfunction="BOOT0_" pintype="passive"/>
-      <node ref="R64" pin="2" pintype="passive"/>
-      <node ref="TP22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J4" pin="44" pinfunction="BOOT0_" pintype="passive"/>
+      <node ref="R49" pin="2" pintype="passive"/>
     </net>
-    <net code="4" name="/Microcontroller/INT_1">
+    <net code="4" name="/Microcontroller/INT">
       <node ref="J3" pin="25" pinfunction="PB12_" pintype="passive"/>
-      <node ref="R32" pin="2" pintype="passive"/>
-      <node ref="R58" pin="1" pintype="passive"/>
-    </net>
-    <net code="5" name="/Microcontroller/INT_2">
-      <node ref="J3" pin="14" pinfunction="_PA4" pintype="passive"/>
-      <node ref="R63" pin="1" pintype="passive"/>
-    </net>
-    <net code="6" name="/Microcontroller/LED1_1">
-      <node ref="J3" pin="15" pinfunction="_PA5" pintype="passive"/>
-      <node ref="R56" pin="1" pintype="passive"/>
-      <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="7" name="/Microcontroller/LED2_1">
-      <node ref="J3" pin="16" pinfunction="_PA6" pintype="passive"/>
-      <node ref="R57" pin="1" pintype="passive"/>
-      <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="8" name="/Microcontroller/Lght_P_1">
-      <node ref="J3" pin="40" pinfunction="PB4_" pintype="passive"/>
+      <node ref="J4" pin="25" pinfunction="PB12_" pintype="passive"/>
       <node ref="R42" pin="2" pintype="passive"/>
+      <node ref="R52" pin="1" pintype="passive"/>
     </net>
-    <net code="9" name="/Microcontroller/Lght_P_2">
-      <node ref="J3" pin="31" pinfunction="PA10_" pintype="passive"/>
+    <net code="5" name="/Microcontroller/LED1">
+      <node ref="J3" pin="15" pinfunction="_PA5" pintype="passive"/>
+      <node ref="J4" pin="15" pinfunction="_PA5" pintype="passive"/>
+      <node ref="R33" pin="1" pintype="passive"/>
     </net>
-    <net code="10" name="/Microcontroller/Light_powerenable">
-      <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R42" pin="1" pintype="passive"/>
+    <net code="6" name="/Microcontroller/LED2">
+      <node ref="J3" pin="16" pinfunction="_PA6" pintype="passive"/>
+      <node ref="J4" pin="16" pinfunction="_PA6" pintype="passive"/>
+      <node ref="R34" pin="1" pintype="passive"/>
     </net>
-    <net code="11" name="/Microcontroller/NSRT">
+    <net code="7" name="/Microcontroller/Lght_P">
+      <node ref="J3" pin="40" pinfunction="PB4_" pintype="passive"/>
+      <node ref="J4" pin="40" pinfunction="PB4_" pintype="passive"/>
+      <node ref="R47" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="/Microcontroller/Light_powerenable">
+      <node ref="Q8" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R47" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/Microcontroller/NSRT">
       <node ref="J3" pin="7" pinfunction="_NSRT" pintype="passive"/>
-      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="7" pinfunction="_NSRT" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="12" name="/Microcontroller/POT_1">
-      <node ref="J3" pin="19" pinfunction="_PB1" pintype="passive"/>
-      <node ref="R37" pin="2" pintype="passive"/>
+    <net code="10" name="/Microcontroller/OSC_IN">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="_PF0" pintype="passive"/>
+      <node ref="J4" pin="5" pinfunction="_PF0" pintype="passive"/>
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
     </net>
-    <net code="13" name="/Microcontroller/POT_2">
-      <node ref="J3" pin="11" pinfunction="_PA1" pintype="passive"/>
+    <net code="11" name="/Microcontroller/OSC_OUT">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="_PF1" pintype="passive"/>
+      <node ref="J4" pin="6" pinfunction="_PF1" pintype="passive"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="14" name="/Microcontroller/POT_P_1">
+    <net code="12" name="/Microcontroller/POT">
+      <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="R44" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/Microcontroller/POT_P">
       <node ref="J3" pin="20" pinfunction="_PB2" pintype="passive"/>
-      <node ref="R40" pin="2" pintype="passive"/>
+      <node ref="J4" pin="20" pinfunction="_PB2" pintype="passive"/>
+      <node ref="R45" pin="2" pintype="passive"/>
     </net>
-    <net code="15" name="/Microcontroller/POT_P_2">
-      <node ref="J3" pin="29" pinfunction="PA8_" pintype="passive"/>
+    <net code="14" name="/Microcontroller/POT_uc">
+      <node ref="J3" pin="19" pinfunction="_PB1" pintype="passive"/>
+      <node ref="J4" pin="19" pinfunction="_PB1" pintype="passive"/>
+      <node ref="JP2" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="JP5" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="JP6" pin="1" pinfunction="A" pintype="passive"/>
     </net>
-    <net code="16" name="/Microcontroller/Potentiometer_powerenable">
-      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R40" pin="1" pintype="passive"/>
+    <net code="15" name="/Microcontroller/Plg_Dtct">
+      <node ref="J3" pin="21" pinfunction="_PB10" pintype="passive"/>
+      <node ref="J4" pin="21" pinfunction="_PB10" pintype="passive"/>
+      <node ref="R55" pin="2" pintype="passive"/>
     </net>
-    <net code="17" name="/Microcontroller/Potentiometer_signal">
-      <node ref="R37" pin="1" pintype="passive"/>
+    <net code="16" name="/Microcontroller/Plug_Detect">
+      <node ref="R55" pin="1" pintype="passive"/>
+      <node ref="R58" pin="2" pintype="passive"/>
+      <node ref="R61" pin="2" pintype="passive"/>
+      <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="17" name="/Microcontroller/Potentiometer_powerenable">
+      <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R45" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="/Microcontroller/Potentiometer_signal">
+      <node ref="R44" pin="1" pintype="passive"/>
       <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="18" name="/Microcontroller/Rx">
-      <node ref="R66" pin="1" pintype="passive"/>
-      <node ref="R68" pin="2" pintype="passive"/>
-      <node ref="TP24" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="19" name="/Microcontroller/Rx">
+      <node ref="J3" pin="43" pinfunction="PB7_" pintype="passive"/>
+      <node ref="J4" pin="43" pinfunction="PB7_" pintype="passive"/>
+      <node ref="J6" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="R54" pin="1" pintype="passive"/>
+      <node ref="R54" pin="2" pintype="passive"/>
+      <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="2" pinfunction="Tx" pintype="input"/>
     </net>
-    <net code="19" name="/Microcontroller/Rx_1">
-      <node ref="J3" pin="43" pinfunction="PB7_" pintype="passive"/>
-      <node ref="R68" pin="1" pintype="passive"/>
+    <net code="20" name="/Microcontroller/SCL">
+      <node ref="JP3" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="R40" pin="2" pintype="passive"/>
+      <node ref="R57" pin="2" pintype="passive"/>
     </net>
-    <net code="20" name="/Microcontroller/Rx_2">
-      <node ref="J3" pin="13" pinfunction="_PA3" pintype="passive"/>
-      <node ref="R66" pin="2" pintype="passive"/>
-    </net>
-    <net code="21" name="/Microcontroller/SCL_1">
-      <node ref="J3" pin="21" pinfunction="_PB10" pintype="passive"/>
-      <node ref="R30" pin="2" pintype="passive"/>
-      <node ref="R48" pin="1" pintype="passive"/>
-      <node ref="R70" pin="2" pintype="passive"/>
-    </net>
-    <net code="22" name="/Microcontroller/SCL_2">
+    <net code="21" name="/Microcontroller/SCL_uc">
       <node ref="J3" pin="45" pinfunction="PB8_" pintype="passive"/>
+      <node ref="J4" pin="45" pinfunction="PB8_" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="JP3" pin="2" pinfunction="B" pintype="passive"/>
       <node ref="R50" pin="1" pintype="passive"/>
     </net>
-    <net code="23" name="/Microcontroller/SDA_1">
-      <node ref="J3" pin="22" pinfunction="_PB11" pintype="passive"/>
-      <node ref="R31" pin="2" pintype="passive"/>
-      <node ref="R49" pin="1" pintype="passive"/>
-      <node ref="R69" pin="2" pintype="passive"/>
+    <net code="22" name="/Microcontroller/SDA">
+      <node ref="JP4" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="R41" pin="2" pintype="passive"/>
+      <node ref="R56" pin="2" pintype="passive"/>
     </net>
-    <net code="24" name="/Microcontroller/SDA_2">
+    <net code="23" name="/Microcontroller/SDA_uc">
       <node ref="J3" pin="46" pinfunction="PB9_" pintype="passive"/>
-      <node ref="R55" pin="1" pintype="passive"/>
+      <node ref="J4" pin="46" pinfunction="PB9_" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP4" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R51" pin="1" pintype="passive"/>
     </net>
-    <net code="25" name="/Microcontroller/SW1">
+    <net code="24" name="/Microcontroller/SW1">
       <node ref="J3" pin="26" pinfunction="PB13_" pintype="passive"/>
-      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J4" pin="26" pinfunction="PB13_" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="25" name="/Microcontroller/SW2">
+      <node ref="J3" pin="27" pinfunction="PB14_" pintype="passive"/>
+      <node ref="J4" pin="27" pinfunction="PB14_" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="26" name="/Microcontroller/SW3">
+      <node ref="J3" pin="28" pinfunction="PB15_" pintype="passive"/>
+      <node ref="J4" pin="28" pinfunction="PB15_" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="26" name="/Microcontroller/SW2">
-      <node ref="J3" pin="27" pinfunction="PB14_" pintype="passive"/>
-      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="27" name="/Microcontroller/SW3">
-      <node ref="J3" pin="28" pinfunction="PB15_" pintype="passive"/>
-      <node ref="SW4" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="28" name="/Microcontroller/SWCLK">
+    <net code="27" name="/Microcontroller/SWCLK">
       <node ref="J3" pin="37" pinfunction="PA14_" pintype="passive"/>
-      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J4" pin="37" pinfunction="PA14_" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="29" name="/Microcontroller/SWDIO">
+    <net code="28" name="/Microcontroller/SWDIO">
       <node ref="J3" pin="34" pinfunction="PA13_" pintype="passive"/>
-      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="34" pinfunction="PA13_" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="30" name="/Microcontroller/THM_1">
-      <node ref="J3" pin="18" pinfunction="_PB0" pintype="passive"/>
-      <node ref="R36" pin="2" pintype="passive"/>
-    </net>
-    <net code="31" name="/Microcontroller/THM_2">
-      <node ref="J3" pin="10" pinfunction="_PA0" pintype="passive"/>
-    </net>
-    <net code="32" name="/Microcontroller/THM_P_1">
-      <node ref="J3" pin="39" pinfunction="PB3_" pintype="passive"/>
-      <node ref="R41" pin="2" pintype="passive"/>
-    </net>
-    <net code="33" name="/Microcontroller/THM_P_2">
-      <node ref="J3" pin="30" pinfunction="PA9_" pintype="passive"/>
-    </net>
-    <net code="34" name="/Microcontroller/TeHu_P_1">
-      <node ref="J3" pin="41" pinfunction="PB5_" pintype="passive"/>
+    <net code="29" name="/Microcontroller/THM">
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="R43" pin="2" pintype="passive"/>
     </net>
-    <net code="35" name="/Microcontroller/TeHu_P_2">
-      <node ref="J3" pin="32" pinfunction="PA11_" pintype="passive"/>
+    <net code="30" name="/Microcontroller/THM_P">
+      <node ref="J3" pin="39" pinfunction="PB3_" pintype="passive"/>
+      <node ref="J4" pin="39" pinfunction="PB3_" pintype="passive"/>
+      <node ref="R46" pin="2" pintype="passive"/>
     </net>
-    <net code="36" name="/Microcontroller/TemperatureHumidity_powerenable">
+    <net code="31" name="/Microcontroller/THM_uc">
+      <node ref="J3" pin="18" pinfunction="_PB0" pintype="passive"/>
+      <node ref="J4" pin="18" pinfunction="_PB0" pintype="passive"/>
+      <node ref="JP1" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="JP5" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="JP6" pin="3" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="32" name="/Microcontroller/TeHu_P">
+      <node ref="J3" pin="41" pinfunction="PB5_" pintype="passive"/>
+      <node ref="J4" pin="41" pinfunction="PB5_" pintype="passive"/>
+      <node ref="R48" pin="2" pintype="passive"/>
+    </net>
+    <net code="33" name="/Microcontroller/TemperatureHumidity_powerenable">
+      <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R48" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="/Microcontroller/Thermistor_powerenable">
       <node ref="Q6" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R46" pin="1" pintype="passive"/>
+    </net>
+    <net code="35" name="/Microcontroller/Thermistor_signal">
+      <node ref="R28" pin="1" pintype="passive"/>
       <node ref="R43" pin="1" pintype="passive"/>
-    </net>
-    <net code="37" name="/Microcontroller/Thermistor_powerenable">
-      <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R41" pin="1" pintype="passive"/>
-    </net>
-    <net code="38" name="/Microcontroller/Thermistor_signal">
-      <node ref="R25" pin="1" pintype="passive"/>
-      <node ref="R36" pin="1" pintype="passive"/>
       <node ref="TH1" pin="1" pintype="passive"/>
-      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="39" name="/Microcontroller/Tx">
-      <node ref="R65" pin="1" pintype="passive"/>
-      <node ref="R67" pin="2" pintype="passive"/>
-      <node ref="TP23" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="36" name="/Microcontroller/Tx">
+      <node ref="J3" pin="42" pinfunction="PB6_" pintype="passive"/>
+      <node ref="J4" pin="42" pinfunction="PB6_" pintype="passive"/>
+      <node ref="J6" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="R53" pin="1" pintype="passive"/>
+      <node ref="R53" pin="2" pintype="passive"/>
+      <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="4" pinfunction="Rx" pintype="input"/>
     </net>
-    <net code="40" name="/Microcontroller/Tx_1">
-      <node ref="J3" pin="42" pinfunction="PB6_" pintype="passive"/>
-      <node ref="R67" pin="1" pintype="passive"/>
+    <net code="37" name="/Microcontroller/uc2">
+      <node ref="J3" pin="2" pinfunction="_PC13" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="_PC13" pintype="passive"/>
     </net>
-    <net code="41" name="/Microcontroller/Tx_2">
+    <net code="38" name="/Microcontroller/uc3">
+      <node ref="J3" pin="3" pinfunction="_PC14" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="_PC14" pintype="passive"/>
+    </net>
+    <net code="39" name="/Microcontroller/uc4">
+      <node ref="J3" pin="4" pinfunction="_PC15" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="_PC15" pintype="passive"/>
+    </net>
+    <net code="40" name="/Microcontroller/uc10">
+      <node ref="J3" pin="10" pinfunction="_PA0" pintype="passive"/>
+      <node ref="J4" pin="10" pinfunction="_PA0" pintype="passive"/>
+    </net>
+    <net code="41" name="/Microcontroller/uc11">
+      <node ref="J3" pin="11" pinfunction="_PA1" pintype="passive"/>
+      <node ref="J4" pin="11" pinfunction="_PA1" pintype="passive"/>
+    </net>
+    <net code="42" name="/Microcontroller/uc12">
       <node ref="J3" pin="12" pinfunction="_PA2" pintype="passive"/>
-      <node ref="R65" pin="2" pintype="passive"/>
+      <node ref="J4" pin="12" pinfunction="_PA2" pintype="passive"/>
     </net>
-    <net code="42" name="/Power/3.3V UVLO{slash}polarity protector">
-      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R17" pin="2" pintype="passive"/>
-      <node ref="R9" pin="2" pintype="passive"/>
-      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="43" name="/Microcontroller/uc13">
+      <node ref="J3" pin="13" pinfunction="_PA3" pintype="passive"/>
+      <node ref="J4" pin="13" pinfunction="_PA3" pintype="passive"/>
     </net>
-    <net code="43" name="/Power/polarity protected battery voltage">
-      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R18" pin="1" pintype="passive"/>
-      <node ref="R2" pin="2" pintype="passive"/>
-      <node ref="R9" pin="1" pintype="passive"/>
+    <net code="44" name="/Microcontroller/uc14">
+      <node ref="J3" pin="14" pinfunction="_PA4" pintype="passive"/>
+      <node ref="J4" pin="14" pinfunction="_PA4" pintype="passive"/>
+    </net>
+    <net code="45" name="/Microcontroller/uc17">
+      <node ref="J3" pin="17" pinfunction="_PA7" pintype="passive"/>
+      <node ref="J4" pin="17" pinfunction="_PA7" pintype="passive"/>
+    </net>
+    <net code="46" name="/Microcontroller/uc22">
+      <node ref="J3" pin="22" pinfunction="_PB11" pintype="passive"/>
+      <node ref="J4" pin="22" pinfunction="_PB11" pintype="passive"/>
+    </net>
+    <net code="47" name="/Microcontroller/uc29">
+      <node ref="J3" pin="29" pinfunction="PA8_" pintype="passive"/>
+      <node ref="J4" pin="29" pinfunction="PA8_" pintype="passive"/>
+    </net>
+    <net code="48" name="/Microcontroller/uc30">
+      <node ref="J3" pin="30" pinfunction="PA9_" pintype="passive"/>
+      <node ref="J4" pin="30" pinfunction="PA9_" pintype="passive"/>
+    </net>
+    <net code="49" name="/Microcontroller/uc31">
+      <node ref="J3" pin="31" pinfunction="PA10_" pintype="passive"/>
+      <node ref="J4" pin="31" pinfunction="PA10_" pintype="passive"/>
+    </net>
+    <net code="50" name="/Microcontroller/uc32">
+      <node ref="J3" pin="32" pinfunction="PA11_" pintype="passive"/>
+      <node ref="J4" pin="32" pinfunction="PA11_" pintype="passive"/>
+    </net>
+    <net code="51" name="/Microcontroller/uc33">
+      <node ref="J3" pin="33" pinfunction="PA12_" pintype="passive"/>
+      <node ref="J4" pin="33" pinfunction="PA12_" pintype="passive"/>
+    </net>
+    <net code="52" name="/Microcontroller/uc35">
+      <node ref="J3" pin="35" pinfunction="PA6_" pintype="passive"/>
+      <node ref="J4" pin="35" pinfunction="PA6_" pintype="passive"/>
+    </net>
+    <net code="53" name="/Microcontroller/uc36">
+      <node ref="J3" pin="36" pinfunction="PF7_" pintype="passive"/>
+      <node ref="J4" pin="36" pinfunction="PF7_" pintype="passive"/>
+    </net>
+    <net code="54" name="/Microcontroller/uc38">
+      <node ref="J3" pin="38" pinfunction="PA15_" pintype="passive"/>
+      <node ref="J4" pin="38" pinfunction="PA15_" pintype="passive"/>
+    </net>
+    <net code="55" name="/Power/3.3V UVLO{slash}polarity protector">
+      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="56" name="/Power/polarity protected battery voltage">
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="44" name="/Sensors/Light_SCL">
-      <node ref="R30" pin="1" pintype="passive"/>
+    <net code="57" name="/Sensors/Light_SCL">
+      <node ref="R40" pin="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="SCL" pintype="bidirectional"/>
+      <node ref="U6" pin="4" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="58" name="/Sensors/Light_SDA">
+      <node ref="R41" pin="1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U6" pin="6" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="/Sensors/Light_interrupt">
+      <node ref="R42" pin="1" pintype="passive"/>
       <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U4" pin="3" pinfunction="SCL" pintype="bidirectional"/>
-      <node ref="U5" pin="4" pinfunction="SCL" pintype="input"/>
+      <node ref="U6" pin="5" pinfunction="INT" pintype="open_collector"/>
     </net>
-    <net code="45" name="/Sensors/Light_SDA">
-      <node ref="R31" pin="1" pintype="passive"/>
-      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U4" pin="4" pinfunction="SDA" pintype="bidirectional"/>
-      <node ref="U5" pin="6" pinfunction="SDA" pintype="bidirectional"/>
+    <net code="60" name="/USB/Main_Analogue_Data_Read">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JP5" pin="2" pinfunction="C" pintype="passive"/>
     </net>
-    <net code="46" name="/Sensors/Light_interrupt">
-      <node ref="R32" pin="1" pintype="passive"/>
-      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U5" pin="5" pinfunction="INT" pintype="open_collector"/>
+    <net code="61" name="/USB/Secondary_Analogue_Data_Read">
+      <node ref="J6" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="JP6" pin="2" pinfunction="C" pintype="passive"/>
     </net>
-    <net code="47" name="GND">
+    <net code="62" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
       <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -3210,25 +3856,29 @@
       <node ref="J3" pin="23" pinfunction="_VSS" pintype="passive"/>
       <node ref="J3" pin="47" pinfunction="VSS_" pintype="passive"/>
       <node ref="J3" pin="8" pinfunction="_VSSA" pintype="passive"/>
-      <node ref="R10" pin="2" pintype="passive"/>
-      <node ref="R15" pin="1" pintype="passive"/>
-      <node ref="R19" pin="1" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
-      <node ref="R64" pin="1" pintype="passive"/>
-      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="J4" pin="23" pinfunction="_VSS" pintype="passive"/>
+      <node ref="J4" pin="47" pinfunction="VSS_" pintype="passive"/>
+      <node ref="J4" pin="8" pinfunction="_VSSA" pintype="passive"/>
+      <node ref="J6" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R49" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R60" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
       <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="SW4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TH1" pin="2" pintype="passive"/>
-      <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U1" pin="1" pinfunction="TEMP" pintype="input"/>
-      <node ref="U1" pin="3" pinfunction="GND" pintype="input"/>
-      <node ref="U2" pin="2" pinfunction="V-" pintype="power_in"/>
-      <node ref="U3" pin="1" pinfunction="GND" pintype="power_in"/>
-      <node ref="U4" pin="6" pinfunction="GND" pintype="power_in"/>
-      <node ref="U5" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="2" pinfunction="V-" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="TEMP" pintype="input"/>
+      <node ref="U2" pin="3" pinfunction="GND" pintype="input"/>
+      <node ref="U4" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="GND" pintype="power_in"/>
       <node ref="U7" pin="1" pinfunction="A0" pintype="input"/>
       <node ref="U7" pin="2" pinfunction="A1" pintype="input"/>
       <node ref="U7" pin="3" pinfunction="A2" pintype="input"/>
@@ -3240,212 +3890,226 @@
       <node ref="U8" pin="8" pinfunction="SH3" pintype="input"/>
       <node ref="U8" pin="9" pinfunction="SH4" pintype="input"/>
       <node ref="U9" pin="1" pinfunction="GND" pintype="input"/>
-      <node ref="u6" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="u3" pin="2" pinfunction="-" pintype="passive"/>
     </net>
-    <net code="48" name="Net-(#FLG01-pwr)">
+    <net code="63" name="Net-(#FLG01-pwr)">
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="64" name="Net-(#FLG03-pwr)">
       <node ref="C3" pin="1" pintype="passive"/>
-      <node ref="R17" pin="1" pintype="passive"/>
-      <node ref="R20" pin="2" pintype="passive"/>
-      <node ref="U3" pin="3" pinfunction="VI" pintype="power_in"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="VI" pintype="power_in"/>
     </net>
-    <net code="49" name="Net-(#FLG02-pwr)">
-      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R2" pin="1" pintype="passive"/>
-      <node ref="R3" pin="1" pintype="passive"/>
-      <node ref="R6" pin="1" pintype="passive"/>
-      <node ref="U2" pin="5" pinfunction="V+" pintype="power_in"/>
-    </net>
-    <net code="50" name="Net-(#FLG04-pwr)">
+    <net code="65" name="Net-(#FLG05-pwr)">
       <node ref="C5" pin="1" pintype="passive"/>
-      <node ref="Q6" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R26" pin="1" pintype="passive"/>
-      <node ref="U4" pin="1" pinfunction="VDD" pintype="power_in"/>
-    </net>
-    <net code="51" name="Net-(#FLG06-pwr)">
-      <node ref="C6" pin="1" pintype="passive"/>
       <node ref="Q7" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="VDD" pintype="power_in"/>
     </net>
-    <net code="52" name="Net-(D1-A)">
+    <net code="66" name="Net-(#FLG06-pwr)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="Q8" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="67" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="2" pintype="input"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="68" name="Net-(D2-A)">
       <node ref="C1" pin="1" pintype="passive"/>
-      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
       <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U1" pin="4" pinfunction="Vcc" pintype="input"/>
-      <node ref="U1" pin="8" pinfunction="CE" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="Vcc" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="CE" pintype="input"/>
     </net>
-    <net code="53" name="Net-(D1-K)">
-      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="R5" pin="1" pintype="passive"/>
+    <net code="69" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
     </net>
-    <net code="54" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2" pinfunction="2" pintype="input"/>
-      <node ref="R12" pin="2" pintype="passive"/>
-      <node ref="R7" pin="1" pintype="passive"/>
-    </net>
-    <net code="55" name="Net-(D3-K)">
+    <net code="70" name="Net-(D3-K)">
       <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
     </net>
-    <net code="56" name="Net-(D4-A)">
+    <net code="71" name="Net-(D4-A)">
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="R56" pin="2" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
     </net>
-    <net code="57" name="Net-(D5-A)">
+    <net code="72" name="Net-(D5-A)">
       <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="R57" pin="2" pintype="passive"/>
+      <node ref="R39" pin="2" pintype="passive"/>
     </net>
-    <net code="58" name="Net-(J1-Pin_2)">
+    <net code="73" name="Net-(J1-Pin_2)">
+      <node ref="C2" pin="1" pintype="passive"/>
       <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R14" pin="1" pintype="passive"/>
-      <node ref="R16" pin="2" pintype="passive"/>
-      <node ref="R18" pin="2" pintype="passive"/>
-      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="u6" pin="1" pinfunction="+" pintype="passive"/>
-    </net>
-    <net code="59" name="Net-(Q1-G)">
-      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R11" pin="1" pintype="passive"/>
-    </net>
-    <net code="60" name="Net-(Q2-G)">
-      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="BAT" pintype="input"/>
+      <node ref="u3" pin="1" pinfunction="+" pintype="passive"/>
     </net>
-    <net code="61" name="Net-(Q2-S)">
-      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R13" pin="1" pintype="passive"/>
+    <net code="74" name="Net-(J6-Pin_7)">
+      <node ref="J6" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="R58" pin="1" pintype="passive"/>
     </net>
-    <net code="62" name="Net-(Q3-G)">
+    <net code="75" name="Net-(Q1-D)">
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="76" name="Net-(Q1-G)">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="77" name="Net-(Q2-G)">
+      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="78" name="Net-(Q3-D)">
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="79" name="Net-(Q3-G)">
       <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
     </net>
-    <net code="63" name="Net-(Q3-S)">
-      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R16" pin="1" pintype="passive"/>
-    </net>
-    <net code="64" name="Net-(Q4-D)">
+    <net code="80" name="Net-(Q4-D)">
       <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="81" name="Net-(Q4-G)">
+      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+    </net>
+    <net code="82" name="Net-(Q5-D)">
+      <node ref="Q5" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
       <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="65" name="Net-(Q4-S)">
-      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R23" pin="1" pintype="passive"/>
-    </net>
-    <net code="66" name="Net-(Q5-D)">
-      <node ref="Q5" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R22" pin="1" pintype="passive"/>
-      <node ref="R25" pin="2" pintype="passive"/>
-    </net>
-    <net code="67" name="Net-(Q5-S)">
+    <net code="83" name="Net-(Q5-S)">
       <node ref="Q5" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
     </net>
-    <net code="68" name="Net-(Q6-S)">
+    <net code="84" name="Net-(Q6-D)">
+      <node ref="Q6" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+    </net>
+    <net code="85" name="Net-(Q6-S)">
       <node ref="Q6" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
     </net>
-    <net code="69" name="Net-(Q7-S)">
+    <net code="86" name="Net-(Q7-S)">
       <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
     </net>
-    <net code="70" name="Net-(R11-Pad2)">
-      <node ref="R11" pin="2" pintype="passive"/>
-      <node ref="R12" pin="1" pintype="passive"/>
-      <node ref="U2" pin="4" pintype="output"/>
+    <net code="87" name="Net-(Q8-S)">
+      <node ref="Q8" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
     </net>
-    <net code="71" name="Net-(U1-BAT)">
-      <node ref="C2" pin="1" pintype="passive"/>
-      <node ref="R13" pin="2" pintype="passive"/>
-      <node ref="R14" pin="2" pintype="passive"/>
-      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U1" pin="5" pinfunction="BAT" pintype="input"/>
+    <net code="88" name="Net-(R12-Pad2)">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pintype="output"/>
     </net>
-    <net code="72" name="Net-(U1-CHRG)">
-      <node ref="R8" pin="1" pintype="passive"/>
-      <node ref="U1" pin="7" pinfunction="CHRG" pintype="input"/>
+    <net code="89" name="Net-(R33-Pad2)">
+      <node ref="R33" pin="2" pintype="passive"/>
+      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="73" name="Net-(U1-PROG)">
-      <node ref="R10" pin="1" pintype="passive"/>
-      <node ref="U1" pin="2" pinfunction="PROG" pintype="input"/>
+    <net code="90" name="Net-(R34-Pad2)">
+      <node ref="R34" pin="2" pintype="passive"/>
+      <node ref="R39" pin="1" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="74" name="Net-(U1-STDBY#)">
+    <net code="91" name="Net-(R35-Pad1)">
+      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="92" name="Net-(R36-Pad1)">
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="93" name="Net-(R37-Pad1)">
+      <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="94" name="Net-(R59-Pad2)">
+      <node ref="R59" pin="2" pintype="passive"/>
+      <node ref="R60" pin="1" pintype="passive"/>
+      <node ref="R61" pin="1" pintype="passive"/>
+    </net>
+    <net code="95" name="Net-(U1-+)">
       <node ref="R5" pin="2" pintype="passive"/>
-      <node ref="U1" pin="6" pinfunction="STDBY#" pintype="input"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="+" pintype="input"/>
     </net>
-    <net code="75" name="Net-(U2-+)">
-      <node ref="R3" pin="2" pintype="passive"/>
-      <node ref="R4" pin="1" pintype="passive"/>
-      <node ref="U2" pin="1" pinfunction="+" pintype="input"/>
+    <net code="96" name="Net-(U1--)">
+      <node ref="D1" pin="1" pintype="input"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="-" pintype="input"/>
     </net>
-    <net code="76" name="Net-(U2--)">
-      <node ref="D2" pin="1" pintype="input"/>
-      <node ref="R6" pin="2" pintype="passive"/>
-      <node ref="U2" pin="3" pinfunction="-" pintype="input"/>
+    <net code="97" name="Net-(U2-CHRG)">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="CHRG" pintype="input"/>
     </net>
-    <net code="77" name="Net-(U7-SCL)">
-      <node ref="R70" pin="1" pintype="passive"/>
-      <node ref="TP25" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="98" name="Net-(U2-PROG)">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="PROG" pintype="input"/>
+    </net>
+    <net code="99" name="Net-(U2-STDBY#)">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="STDBY#" pintype="input"/>
+    </net>
+    <net code="100" name="Net-(U4-VO)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="101" name="Net-(U7-SCL)">
+      <node ref="R57" pin="1" pintype="passive"/>
+      <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="6" pinfunction="SCL" pintype="input"/>
     </net>
-    <net code="78" name="Net-(U7-SDA)">
-      <node ref="R69" pin="1" pintype="passive"/>
-      <node ref="TP26" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="102" name="Net-(U7-SDA)">
+      <node ref="R56" pin="1" pintype="passive"/>
+      <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="5" pinfunction="SDA" pintype="bidirectional"/>
     </net>
-    <net code="79" name="Net-(U8-D+)">
-      <node ref="TP28" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="103" name="Net-(U8-D+)">
+      <node ref="TP22" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U8" pin="3" pinfunction="D+" pintype="input"/>
       <node ref="U9" pin="5" pinfunction="D+" pintype="input"/>
     </net>
-    <net code="80" name="Net-(U8-D-)">
-      <node ref="TP27" pin="1" pinfunction="1" pintype="passive"/>
+    <net code="104" name="Net-(U8-D-)">
+      <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U8" pin="2" pinfunction="D-" pintype="input"/>
       <node ref="U9" pin="6" pinfunction="D-" pintype="input"/>
     </net>
-    <net code="81" name="unconnected-(J3-PA6_-Pad35)">
-      <node ref="J3" pin="35" pinfunction="PA6_" pintype="passive+no_connect"/>
+    <net code="105" name="unconnected-(J6-Pin_6-Pad6)">
+      <node ref="J6" pin="6" pinfunction="Pin_6" pintype="passive+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(J3-PA12_-Pad33)">
-      <node ref="J3" pin="33" pinfunction="PA12_" pintype="passive+no_connect"/>
-    </net>
-    <net code="83" name="unconnected-(J3-PA15_-Pad38)">
-      <node ref="J3" pin="38" pinfunction="PA15_" pintype="passive+no_connect"/>
-    </net>
-    <net code="84" name="unconnected-(J3-PF7_-Pad36)">
-      <node ref="J3" pin="36" pinfunction="PF7_" pintype="passive+no_connect"/>
-    </net>
-    <net code="85" name="unconnected-(J3-_PA7-Pad17)">
-      <node ref="J3" pin="17" pinfunction="_PA7" pintype="passive+no_connect"/>
-    </net>
-    <net code="86" name="unconnected-(J3-_PC13-Pad2)">
-      <node ref="J3" pin="2" pinfunction="_PC13" pintype="passive+no_connect"/>
-    </net>
-    <net code="87" name="unconnected-(J3-_PC14-Pad3)">
-      <node ref="J3" pin="3" pinfunction="_PC14" pintype="passive+no_connect"/>
-    </net>
-    <net code="88" name="unconnected-(J3-_PC15-Pad4)">
-      <node ref="J3" pin="4" pinfunction="_PC15" pintype="passive+no_connect"/>
-    </net>
-    <net code="89" name="unconnected-(J3-_PF0-Pad5)">
-      <node ref="J3" pin="5" pinfunction="_PF0" pintype="passive+no_connect"/>
-    </net>
-    <net code="90" name="unconnected-(J3-_PF1-Pad6)">
-      <node ref="J3" pin="6" pinfunction="_PF1" pintype="passive+no_connect"/>
-    </net>
-    <net code="91" name="unconnected-(U4-NC-Pad2)">
-      <node ref="U4" pin="2" pinfunction="NC" pintype="no_connect"/>
-    </net>
-    <net code="92" name="unconnected-(U4-NC-Pad5)">
-      <node ref="U4" pin="5" pinfunction="NC" pintype="no_connect"/>
-    </net>
-    <net code="93" name="unconnected-(U5-NC-Pad2)">
+    <net code="106" name="unconnected-(U5-NC-Pad2)">
       <node ref="U5" pin="2" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="94" name="unconnected-(U8-ID-Pad4)">
+    <net code="107" name="unconnected-(U5-NC-Pad5)">
+      <node ref="U5" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(U6-NC-Pad2)">
+      <node ref="U6" pin="2" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U8-ID-Pad4)">
       <node ref="U8" pin="4" pinfunction="ID" pintype="input+no_connect"/>
     </net>
   </nets>

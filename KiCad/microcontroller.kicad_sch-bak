@@ -3824,25 +3824,13 @@
     (property "Reference" "C8" (at 156.21 180.9813 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "33pF" (at 156.21 183.5213 0)
+    (property "Value" "10pF" (at 156.21 183.5213 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "JLCPartFootprints:C0402" (at 153.67 181.61 0)
+    (property "Footprint" "" (at 153.67 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Extended Part Cost" "0" (at 153.67 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLC code" "C1570" (at 153.67 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part name" "0402CG300J500NT" (at 153.67 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "cost per unit" "0.0010" (at 153.67 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6683819d-ff1f-40a0-87f0-efe23908a94c))
@@ -4102,22 +4090,10 @@
     (property "Value" "Crystal" (at 143.51 173.99 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "JLCPartFootprints:CRYSTAL-SMD_L11.5-W4.8-LS12.7" (at 143.51 177.8 0)
+    (property "Footprint" "" (at 143.51 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 143.51 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Extended Part Cost" "0" (at 143.51 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLC code" "C12674" (at 143.51 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part name" "X49SM8MSD2SC" (at 143.51 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "cost per unit" "0.0864" (at 143.51 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6c529c1f-9e64-45e0-93ac-aa856a10532b))
@@ -4299,7 +4275,7 @@
   (symbol (lib_id "power:GND") (at 260.35 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2fc733d3-cc89-4f9f-804c-6890ba84ad58)
-    (property "Reference" "#PWR046" (at 260.35 123.19 0)
+    (property "Reference" "#PWR044" (at 260.35 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 260.35 121.92 0)
@@ -4315,7 +4291,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -4487,25 +4463,13 @@
     (property "Reference" "C7" (at 135.89 180.9813 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "33pF" (at 135.89 183.5213 0)
+    (property "Value" "10pF" (at 135.89 183.5213 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "JLCPartFootprints:C0402" (at 133.35 181.61 0)
+    (property "Footprint" "" (at 133.35 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 133.35 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Extended Part Cost" "0" (at 133.35 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLC code" "C1570" (at 133.35 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part name" "0402CG300J500NT" (at 133.35 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "cost per unit" "0.0010" (at 133.35 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2256ca2e-71ca-43e3-b690-f04b27a32a39))
@@ -5083,7 +5047,7 @@
   (symbol (lib_id "power:+3V3") (at 247.65 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 992de8dc-7cde-4767-9c38-88c86cfb8494)
-    (property "Reference" "#PWR044" (at 247.65 105.41 0)
+    (property "Reference" "#PWR042" (at 247.65 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 247.65 97.79 0)
@@ -5099,7 +5063,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -5627,7 +5591,7 @@
   (symbol (lib_id "power:GND") (at 151.13 30.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba4bd555-5171-494d-a2a5-61963ea71f7b)
-    (property "Reference" "#PWR039" (at 151.13 24.13 0)
+    (property "Reference" "#PWR038" (at 151.13 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 148.59 26.67 0)
@@ -5643,7 +5607,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -5724,7 +5688,7 @@
   (symbol (lib_id "power:GND") (at 133.35 185.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c3c5a3d3-4379-43c3-9af7-9549af37fc1f)
-    (property "Reference" "#PWR038" (at 133.35 191.77 0)
+    (property "Reference" "#PWR057" (at 133.35 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.35 190.5 0)
@@ -5740,7 +5704,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -5823,7 +5787,7 @@
   (symbol (lib_id "power:GND") (at 234.95 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d6329fcd-692a-4dec-b86b-c5f7bec013f8)
-    (property "Reference" "#PWR043" (at 234.95 123.19 0)
+    (property "Reference" "#PWR041" (at 234.95 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 121.92 0)
@@ -5839,7 +5803,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -5848,7 +5812,7 @@
   (symbol (lib_id "power:GND") (at 247.65 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9aae32d-7475-42c2-aa8e-83c375e965fa)
-    (property "Reference" "#PWR045" (at 247.65 128.27 0)
+    (property "Reference" "#PWR043" (at 247.65 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 247.65 127 0)
@@ -5864,7 +5828,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -5873,7 +5837,7 @@
   (symbol (lib_id "power:+3V3") (at 162.56 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dbc69022-e55a-4673-9e0d-afa30e394d79)
-    (property "Reference" "#PWR041" (at 162.56 128.27 0)
+    (property "Reference" "#PWR039" (at 162.56 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 163.83 121.92 0)
@@ -5889,7 +5853,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -5898,7 +5862,7 @@
   (symbol (lib_id "power:GND") (at 153.67 185.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid de3c573c-a690-417a-9318-9945a6e83bc7)
-    (property "Reference" "#PWR040" (at 153.67 191.77 0)
+    (property "Reference" "#PWR058" (at 153.67 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 153.67 190.5 0)
@@ -5914,7 +5878,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -6223,7 +6187,7 @@
   (symbol (lib_id "power:+3V3") (at 205.74 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fbc7121e-7f0a-4116-b613-4b66daaf9629)
-    (property "Reference" "#PWR042" (at 205.74 128.27 0)
+    (property "Reference" "#PWR040" (at 205.74 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 207.01 121.92 0)
@@ -6239,7 +6203,7 @@
     (instances
       (project "EEE3088F_CKR"
         (path "/31e5d740-f3fb-4029-be8d-dfdc4f653d72/781e4e3c-a3ff-4e52-b852-0676e4a3ef49"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
