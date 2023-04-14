@@ -1,75 +1,36 @@
-Source:,/home/robert/Dropbox/2023 Work/EEE3088F/EEE3088F-Project-CKR/KiCad/EEE3088F_CKR.kicad_sch,,,,,,,,,,,,,
-Date:,Mon 03 Apr 2023 16:50:32,,,,,,,,,,,,,
-Tool:,Eeschema 7.0.1-3b83917a11~172~ubuntu22.04.1,,,,,,,,,,,,,
-Generator:,/usr/share/kicad/plugins/bom_csv_grouped_by_value.py,,,,,,,,,,,,,
-Component Count:,132,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-Collated Components:,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,DNP,DNF,Extended Part Cost,JLC code,Part name,cost per unit,,
-1,4,"C1, C2, C3, C4",10u,Device:C,JLCPartFootprints:C0603,~,,,0,C19702,CL10A106KP8NNNC,"0,0066",,"0,132"
-2,1,C5,100n,Device:C,JLCPartFootprints:C0402,~,,,0,C1525,CL05B104KO5NNNC,"0,0011",,"0,0055"
-3,1,C6,1u,Device:C,JLCPartFootprints:C0402,~,,,0,C52923,CL05A105KA5NQNC,"0,0039",,"0,0195"
-4,2,"C7, C8",33pF,Device:C_Small,,~,,,0,C1570,0402CG300J500NT,"0,001",,"0,01"
-5,1,D1,zener diode,power_components_library:MMSZ4678T1G,JLCPartFootprints:SOD-123_L2.8-W1.8-LS3.7-RD,,,,3,C36599,MMSZ4678T18,"0,0956",,"3,478"
-6,1,D2,LED_green,Device:LED,JLCPartFootprints:LED0603-RD,~,,,0,C72043,19-217/GHC-YR1S2/3T,"0,0264",,"0,132"
-7,1,D3,LED_red,Device:LED,JLCPartFootprints:LED0603-RD,~,,,0,C2286,KT-0603R,"0,0054",,"0,027"
-8,2,"D4, D5",LED_white,Device:LED,JLCPartFootprints:LED0805-R-RD,~,,,0,C34499,C34499,"0,0157",,"0,157"
-9,2,"J1, J2",01x02_male_header,Connector:Conn_01x02_Pin,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,~,DNP,X,0,,,0,,0
-10,1,J3,STM32F051C6_female_header,EEE3088F_CKR:STM32F051C6_female_header,CustomFootprints:STM32F051C6_female_header,,DNP,X,0,,,0,,0
-11,1,J4,STM32F051C6_testpoints,EEE3088F_CKR:STM32F051C6_testpoints,CustomFootprints:STM32F051C6_testpoints,,DNP,X,0,,,0,,0
-12,1,J5,STM-link_debugger,Connector:Conn_01x03_Male,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,~,DNP,X,0,,,0,,0
-13,1,J6,01x10_male_header,Connector:Conn_01x10_Pin,Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical,~,DNP,X,0,,,0,,0
-14,4,"JP1, JP2, JP3, JP4",01x02_male_header_jumper,Jumper:Jumper_2_Bridged,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,~,DNP,X,0,,,0,,0
-15,2,"JP5, JP6",01x03_male_header_jumper,Jumper:Jumper_3_Bridged12,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,~,DNP,X,0,,,0,,0
-16,8,"Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8",AO3401A,Transistor_FET:AO3401A,JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf,,,0,C15127,AO3401A,"0,07965",,"3,186"
-17,31,"R1, R4, R15, R18, R20, R23, R26, R27, R31, R32, R33, R34, R35, R36, R37, R40, R41, R42, R43, R44, R45, R46, R47, R48, R53, R54, R55, R56, R57, R58, R61",0,Device:R,JLCPartFootprints:R0603,~,,,0,C21189,0603WAF0000T5E,"0,001",,"0,155"
-18,9,"R2, R10, R16, R19, R21, R24, R25, R29, R30",0,Device:R,JLCPartFootprints:R0603,~,DNP,,0,C21189,0603WAF0000T5E,"0,001",,"0,045"
-19,8,"R3, R9, R11, R14, R17, R22, R38, R39",1.2k,Device:R,JLCPartFootprints:R0805,~,,,0,C17630,0805W8F3300T5E,"0,0016",,"0,064"
-20,2,"R5, R12",1M,Device:R,JLCPartFootprints:R0805,~,,,0,C17514,0805W8F1004T5E,"0,0016",,"0,016"
-21,1,R6,2M,Device:R,JLCPartFootprints:R0805,~,,,0,C26112,0805W8F2004T5E,"0,0024",,"0,012"
-22,1,R7,27.5k,Device:R,JLCPartFootprints:R0805,~,,,0,C17593,0805W8F2702T5E,"0,0017",,"0,0085"
-23,3,"R8, R49, R59",10k,Device:R,JLCPartFootprints:R0805,~,,,0,C17414,0805W8F1002T5E,"0,001",,"0,015"
-24,1,R13,3M,Device:R,JLCPartFootprints:R0603,~,,,0,C23156,0603WAF3004T5E,"0,0013",,"0,0065"
-25,1,R28,100k,Device:R,JLCPartFootprints:R1206,~,,,0,C17900,1206W4F1003T5E,"0,0031",,"0,0155"
-26,2,"R50, R51",3.9k,Device:R,JLCPartFootprints:R0402,~,,,0,C51721,0402WGF3901TCE,"0,0006",,"0,006"
-27,1,R52,8.2k,Device:R,JLCPartFootprints:R0402,~,,,0,C25924,0402WGF8201TCE,"0,0005",,"0,0025"
-28,1,R60,20k,Device:R,JLCPartFootprints:R0603,~,,,0,C4184,0603WAF2002T5E,"0,001",,"0,005"
-29,1,RV1,R_Potentiometer,Device:R_Potentiometer,JLCPartFootprints:RES-ADJ-TH_RK09K1130AJ3,~,,,3,C388854,RK09K1130AJ3,"0,5956",,"5,978"
-30,1,SW1,Reset switch,Switch:SW_Push,JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2,~,,,0,C318884,TS-1187A-B-A-B,"0,0152",,"0,076"
-31,3,"SW2, SW3, SW4",Switch,Switch:SW_Push,JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2,~,,,0,C318884,TS-1187A-B-A-B,"0,0152",,"0,228"
-32,1,TH1,Thermistor,Device:Thermistor,JLCPartFootprints:R0402,~,,,3,C77130,NCP15WF104F03RC,"0,0126",,"3,063"
-33,1,TP1,5v,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-34,1,TP2,UVLO,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-35,1,TP3,battery charger,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-36,1,TP4,3.3v out,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-37,1,TP5,reverse polarity ,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-38,1,TP6,Pot ADC,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-39,1,TP7,Sensors SDA,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-40,1,TP8,Sensors SCL,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-41,1,TP9,Therm ADC,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-42,1,TP10,Light Interrupt,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-43,1,TP11,LED 1,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-44,1,TP12,LED 2,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-45,1,TP13,Switch 1,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-46,1,TP14,Switch 2,Connector:TestPoint,CustomFootprints:Testpoint,~,C16581,X,0,,,0,,0
-47,1,TP15,Switch 3,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-48,1,TP16,uc Tx,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-49,1,TP17,uc Rx,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-50,1,TP18,Plug Detect,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-51,1,TP19,EEPROM SDA,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-52,1,TP20,EEPROM SCL,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-53,1,TP21,USB D-,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-54,1,TP22,USB D+,Connector:TestPoint,CustomFootprints:Testpoint,~,,X,0,,,0,,0
-55,1,U1,LMV321IDBVR,Amplifier_Operational:LMV321,JLCPartFootprints:SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR,http://www.ti.com/lit/ds/symlink/lmv324.pdf,,,0,C7972,LMV321,"0,1456",,"0,728"
-56,1,U2,Battery Charger,Power comonentes:TP4056,JLCPartFootprints:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP,,,,0,C16581,TP4056,"0,2148",,"1,074"
-57,1,u3,battery holder,Device:Battery,JLCPartFootprints:BATTERY-SMD_18650-1S-L77.1-W20.7-1,~,DNP,X,0,C2988620,BH-18650-B1BA002,0,,0
-58,1,U4,XC6206PxxxMR,Regulator_Linear:XC6206PxxxMR,JLCPartFootprints:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR,https://www.torexsemi.com/file/xc6206/XC6206.pdf,,,0,C5446,XC6206P332MR,"0,0964",,"0,482"
-59,1,U5,GXHTC3,sensor_components_library:GXHTC3,JLCPartFootprints:DFN-6_L2.0-W2.0-P0.50-BL-EP,,,,3,C2837688,GXHTC3,"0,8714",,"7,357"
-60,1,U6,LTR-303ALS-01,Sensor_Optical:LTR-303ALS-01,JLCPartFootprints:SOT-363_L2.0-W1.3-P0.65-LS2.1-BL,http://optoelectronics.liteon.com/upload/download/DS86-2013-0004/LTR-303ALS-01_DS_V1.pdf,,,3,C364577,LTR-303ALS-01,"0,3762",,"4,881"
-61,1,U7,24LC256,Memory_EEPROM:24LC256,JLCPartFootprints:PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL,http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf,,,3,C411624,24LC256,"1,6033",,"11,0165"
-62,1,U8,usb,power_components_library:C404969,JLCPartFootprints:MICRO-USB-SMD_MICROXNJ,,,,3,C404969,MicroXNJ,"0,0333",,"3,1665"
-63,1,U9,HT42B534-2,EEE3088F_CKR:HT42B534-2,JLCPartFootprints:SOP-8_L4.9-W3.9-P1.27-LS6.0-BL,,,,3,C493294,HT42B534-2,"0,7554",,"6,777"
-64,1,Y1,Crystal,Device:Crystal,,~,,,0,C12674,X49SM8MSD2SC,"0,0864",,"0,432"
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,"52,757"
+"Source:","C:\Users\Kian\OneDrive - University of Cape Town\Desktop\uct\3 year\frirst semester\EEE3088\EEE3088F-Project-CKR\KiCad\EEE3088F_CKR.kicad_sch"
+"Date:","2023/04/14 00:17:15"
+"Tool:","Eeschema (7.0.0)"
+"Generator:","C:\Program Files\KiCad\7.0\bin\scripting\plugins/bom_csv_grouped_by_value_with_fp.py"
+"Component Count:","88"
+"Ref","Qnty","Value","Cmp name","Footprint","Description","Vendor","DNP"
+"C1, C2, C3, C4","4","10u","C","JLCPartFootprints:C0603","Unpolarized capacitor","",""
+"C5","1","100n","C","JLCPartFootprints:C0402","Unpolarized capacitor","",""
+"C6","1","1u","C","JLCPartFootprints:C0402","Unpolarized capacitor","",""
+"C7, C8","2","33pF","C_Small","JLCPartFootprints:C0402","Unpolarized capacitor, small symbol","",""
+"D1","1","LED_green","LED","JLCPartFootprints:LED0603-RD","Light emitting diode","",""
+"D2","1","LED_red","LED","JLCPartFootprints:LED0603-RD","Light emitting diode","",""
+"D3, D4","2","LED_white","LED","JLCPartFootprints:LED0805-R-RD","Light emitting diode","",""
+"Q1, Q4, Q5, Q6, Q7, Q8, Q9, Q30","8","AO3401A","AO3401A","JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR","-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23","",""
+"Q20","1","AO3400A","NMOS","JLCPartFootprints:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR","N-MOSFET transistor, drain/source/gate","",""
+"R1, R16, R19, R21, R24, R27, R28, R32, R33, R34, R35, R36, R37, R38, R41, R42, R43, R44, R45, R46, R47, R48, R49, R54, R55, R56, R57, R58, R59, R62, R80, R110, R400","33","0","R","JLCPartFootprints:R0603","Resistor","",""
+"R3, R5, R12, R15, R18, R23, R39, R40","8","1.2k","R","JLCPartFootprints:R0805","Resistor","",""
+"R13","1","470k","R","JLCPartFootprints:R0805","Resistor","",""
+"R29, R100, R140","3","100k","R","JLCPartFootprints:R0805","Resistor","",""
+"R50, R60","2","10k","R","JLCPartFootprints:R0805","Resistor","",""
+"R51, R52","2","3.9k","R","JLCPartFootprints:R0402","Resistor","",""
+"R53","1","8.2k","R","JLCPartFootprints:R0402","Resistor","",""
+"R61, R90","2","20k","R","JLCPartFootprints:R0603","Resistor","",""
+"RV1","1","R_Potentiometer","R_Potentiometer","JLCPartFootprints:RES-ADJ-TH_RK09K1130AJ3","Potentiometer","",""
+"SW1","1","Reset switch","SW_Push","JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2","Push button switch, generic, two pins","",""
+"SW2, SW3, SW4","3","Switch","SW_Push","JLCPartFootprints:SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2","Push button switch, generic, two pins","",""
+"TH1","1","Thermistor","Thermistor","JLCPartFootprints:R0402","Temperature dependent resistor","",""
+"U1","1","LMS33460MG_NOPB","LMS33460MG_NOPB","JLCPartFootprints:SC-70-5_L2.1-W1.3-P0.65-LS2.1-BR","","",""
+"U2","1","Battery Charger","TP4056","JLCPartFootprints:ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP","","",""
+"U3","1","XC6206PxxxMR","XC6206PxxxMR","JLCPartFootprints:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR","Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23","",""
+"U4","1","GXHTC3","GXHTC3","JLCPartFootprints:DFN-6_L2.0-W2.0-P0.50-BL-EP","","",""
+"U5","1","LTR-303ALS-01","LTR-303ALS-01","JLCPartFootprints:SOT-363_L2.0-W1.3-P0.65-LS2.1-BL","ambient light sensor, i2c interface, 0.01 to 64k lux, 2.4-3.6V","",""
+"U6","1","24LC256","24LC256","JLCPartFootprints:PDIP-8_L9.3-W6.4-P2.54-LS7.6-BL","I2C Serial EEPROM, 256Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8","",""
+"U7","1","usb","C404969","JLCPartFootprints:MICRO-USB-SMD_MICROXNJ","","",""
+"U8","1","HT42B534-2","HT42B534-2","JLCPartFootprints:SOP-8_L4.9-W3.9-P1.27-LS6.0-BL","","",""
+"Y1","1","Crystal","Crystal","JLCPartFootprints:CRYSTAL-SMD_L11.5-W4.8-LS12.7","Two pin crystal","",""

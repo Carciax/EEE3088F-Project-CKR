@@ -466,7 +466,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "./",
+      "netlist": "report.net",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
