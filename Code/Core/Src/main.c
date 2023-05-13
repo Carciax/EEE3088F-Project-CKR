@@ -108,7 +108,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+
 	  if ((GPIOB->IDR & GPIO_IDR_3) == 0b0){
 		  //SW1 pressed
 		  //just turns on and off an LED for now (for testing sakes)
@@ -132,6 +132,7 @@ int main(void)
 
 	  //just calling this here for testing sakes, should be called every 60s using RTC (current date and time) but that has to wait until we get the actual board;
 	  readData();
+	/* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
