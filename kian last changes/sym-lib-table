@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "power_components_library")(type "KiCad")(uri "${KIPRJMOD}/power_components_library/power_components_library.kicad_sym")(options "")(descr ""))
+  (lib (name "sensor_components_library")(type "KiCad")(uri "${KIPRJMOD}/sensor_components_library/sensor_components_library.kicad_sym")(options "")(descr ""))
+  (lib (name "TP4056")(type "KiCad")(uri "${KIPRJMOD}/partes/JLC2KiCad_lib/Schematic/TP4056.kicad_sym")(options "")(descr ""))
+  (lib (name "EEE3088F_CKR")(type "KiCad")(uri "${KIPRJMOD}/EEE3088F_CKR.kicad_sym")(options "")(descr ""))
+)

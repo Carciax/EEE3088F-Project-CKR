@@ -1,0 +1,4 @@
+Info: Reading netlist file 'C:\Users\Kian\OneDrive - University of Cape Town\Desktop\uct\3 year\frirst semester\EEE3088\EEE3088F-Project-CKR\KiCad\report.net'.
+
+Info: Using reference designators to match symbols and footprints.
+
