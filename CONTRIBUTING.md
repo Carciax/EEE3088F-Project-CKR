@@ -49,3 +49,10 @@ Hardware changes should add to the current KiCad project files, and should not b
 Software changes that add any sort of board functionality are welcome. Changes should not remove any existing functionality, unless it is replaced by something more useful/versatile, in which case a thorough explanation must be given to justify the removal of the functionality.
 
 It is recommended that software be develop using STM's STM32 Cube IDE, following all guidelines for the usage of the IDE, to ensure compatibility with existing software and with the microcontroller.
+
+### Details of software used for board design
+
+Other software used to created this board:
+* c++ code version: 22
+* kiCad version: 7.0
+* microsoft ofice 360
