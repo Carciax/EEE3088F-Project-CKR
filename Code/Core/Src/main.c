@@ -88,7 +88,7 @@ int main(void)
   /* USER CODE END Init */
 
   /* Configure the system clock */
-  SystemClock_Config();
+//  SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
 
@@ -98,10 +98,10 @@ int main(void)
   MX_GPIO_Init();
   MX_ADC_Init();
   MX_I2C1_Init();
-  MX_RTC_Init();
+//  MX_RTC_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  GPIOB->ODR |= GPIO_ODR_13;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,7 +109,29 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  if ((GPIOB->IDR & GPIO_IDR_3) == 0b0){
+		  //SW1 pressed
+		  //just turns on and off an LED for now (for testing sakes)
+		  GPIOB->ODR &= ~(GPIO_ODR_13);
+	  } else {
+		  GPIOB->ODR |= GPIO_ODR_13;
+	  }
 
+	  if ((GPIOA->IDR & GPIO_IDR_15) == 0b0){
+		  //SW2 pressed
+	  }
+
+	  if ((GPIOB->IDR & GPIO_IDR_15) == 0b0){
+		  //SW3 pressed
+	  }
+
+	  if ((GPIOB->IDR & GPIO_IDR_14) == GPIO_IDR_14) {
+		  //plug detected
+		  //TODO we could make this a interrupt which shouldn't be too hard to do
+	  }
+
+	  //just calling this here for testing sakes, should be called every 60s using RTC (current date and time) but that has to wait until we get the actual board;
+	  readData();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -190,11 +212,11 @@ static void MX_ADC_Init(void)
   hadc.Init.Resolution = ADC_RESOLUTION_12B;
   hadc.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc.Init.ScanConvMode = ADC_SCAN_DIRECTION_FORWARD;
-  hadc.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc.Init.EOCSelection = ADC_EOC_SEQ_CONV;
   hadc.Init.LowPowerAutoWait = ENABLE;
   hadc.Init.LowPowerAutoPowerOff = DISABLE;
   hadc.Init.ContinuousConvMode = DISABLE;
-  hadc.Init.DiscontinuousConvMode = DISABLE;
+  hadc.Init.DiscontinuousConvMode = ENABLE;
   hadc.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc.Init.DMAContinuousRequests = DISABLE;
@@ -421,10 +443,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB10 PB14 PB15 PB3 */
-  GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_3;
+  /*Configure GPIO pins : PB10 PB14 */
+  GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_14;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PB15 PB3 */
+  GPIO_InitStruct.Pin = GPIO_PIN_15|GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PF6 PF7 */
@@ -436,7 +464,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : PA15 */
   GPIO_InitStruct.Pin = GPIO_PIN_15;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
@@ -444,6 +472,40 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void readData(void) {
+	//stop ADC
+	ADC1->CR |= ADC_CR_ADSTP;
+	while ((ADC1->CR & ADC_CR_ADSTP) == ADC_CR_ADSTP);
+	//check calibration, if not calibrate
+	if ((ADC1->CR & ADC_CR_ADCAL) == ADC_CR_ADCAL) {
+		ADC1->CR |= ADC_CR_ADCAL;
+		while ((ADC1->CR & ADC_CR_ADCAL) == ADC_CR_ADCAL);
+	}
+	//check if ADC is RDY
+	if ((ADC1->ISR & ADC_ISR_ADRDY) == 0b0) {
+		ADC1->CR |= ADC_CR_ADEN;
+		while ((ADC1->ISR & ADC_ISR_ADRDY) == 0b0);
+	}
+
+	//read thermistor data 12-bit res
+	ADC1->CR |= ADC_CR_ADSTART;
+	while ((ADC1->ISR & ADC_ISR_EOC) == 0b0);
+	int THM_data = ADC1->DR;
+
+	//read potentiometer data 12-bit res
+	ADC1->CR |= ADC_CR_ADSTART;
+	while ((ADC1->ISR & ADC_ISR_EOSEQ) == 0b0);
+	int POT_data = ADC1->DR;
+
+	//disable ADC
+	ADC1->CR |= ADC_CR_ADDIS;
+	while ((ADC1->ISR & ADC_ISR_ADRDY) = ADC_ISR_ADRDY);
+
+	//TODO I2C data retrieval
+
+//	return "";
+}
 
 /* USER CODE END 4 */
 
