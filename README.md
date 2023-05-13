@@ -5,8 +5,41 @@ Cameron Clark, CLRCAM007;
 Kian Frassek, FRSKIA001; 
 Robert Dugmore, DGMROB001; 
 
-The HAT will be used as a low power temperature sensor which can be used to log temperatures and give alerts when the temperature exceeds or goes below configurable threshold temperatures. 
-The attachments will be a digital temperature sensor, a potentiometer and basic I/O (LEDs and pushbuttons). The HAT will also include additional breakout pins which users can connect additional output devices to (for temperature alerts), and which will allow connection to a device that logs temperatures. 
-The device could be used in a variety of situations, including personal weather logging, home agriculture, machinery/manufacturing temperature monitoring, student research, and office monitoring. 
-The potentiometer will be used for configuration of the device, such as to set threshold temperatures and change sensor frequency.
+# Description of HAT
+
+This sensor PCB HAT connects to an STM32F0 microcontroller and adds additional sensing functionality in the form of an ambient light sensor, a temperature and humidity sensor, an thermistor, and a potentiometer (which could be connected to some form of mechanical sensing system, e.g., a wind vane). The board can be powered directly from USB, or can be powered by an 18650 battery.
+
+# Getting started
+
+## Introduction
+
+This sensor HAT aims to expand the functionality of an STM32F0 microcontroller by adding various sensors. This getting started guide will go over the minimum hardware and software requirements to connect the HAT and start taking measurements.
+
+## Required hardware
+
+In addition to the HAT, the following hardware is required:
+- an STM32FO microcontoller, with pins connected to 2 1x24-pin male headers spaced -1.524 mm (0.6 in) apart
+- A microUSB-B cable
+- A 5V USB power supply
+- Optional: An 18650 battery
+- A computer with an available USB port running Linux or Windows
+
+## Required software
+
+The board's preconfigured firmware takes measurements from all sensors at a soft-configurable regular interval.
+Data is fed to the computer directly from the USB port with no additional software requirements.
+Custom firmware can be written for an uploaded for the board, further information on the relevant hardware details can be found in this git repository.
+
+## Connecting hardware
+
+The microcontroller should be directly connected to the double-row of females headers labelled "J3". The battery (if being used) can be placed directly into the battery holder, taking care to connect it with the correct polarity.
+
+The board is powered (and the battery is charged) immediately when 5V power is received from the singular USB port. Connecting the USB to a computer enables the start of data transfer to the computer.
+
+## Basic reading of data fromt the microcontroller
+
+Data is fed over the USB connection when the USB is connected and switch 1 is pressed.
+
+## Licensing
+
 
