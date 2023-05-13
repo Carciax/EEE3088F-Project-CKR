@@ -1,0 +1,9 @@
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:75:5:main	8	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:142:6:SystemClock_Config	104	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:193:13:MX_ADC_Init	24	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:255:13:MX_I2C1_Init	8	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:303:13:MX_RTC_Init	32	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:366:13:MX_USART1_UART_Init	8	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:401:13:MX_GPIO_Init	56	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:474:6:readData	16	static
+/Users/cameronclark/Documents/UCT/EEE3088F/EEE3088F-Project-CKR/Code/Core/Src/main.c:506:6:Error_Handler	8	static,ignoring_inline_asm
