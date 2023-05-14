@@ -117,7 +117,7 @@ Under normal operation, the HAT takes 1 reading every 60 seconds. This can be so
 ## Licensing
 MIT License
 
-Copyright (c) 2023 kian frassek, Cameron Clark, Robert Dugmore
+Copyright (c) 2023 Kian Frassek, Cameron Clark, Robert Dugmore
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
